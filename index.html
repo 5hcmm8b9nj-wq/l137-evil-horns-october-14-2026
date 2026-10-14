@@ -1,612 +1,328 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-mode="day">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Dealing with the Evil Horns — L137 Deliverance Ministry International</title>
-<meta name="description" content="Guided prayer, original prophetic direction, daily devotionals and Bible study — Pastor Kiki Ocansey, October 14, 2026.">
-<meta property="og:title" content="Dealing with the Evil Horns — L137">
-<meta property="og:description" content="Pastor Kiki Ocansey · October 14, 2026 · Psalm 75:10 KJV. Press START PRAYING.">
-<meta name="theme-color" content="#0b1f4d">
-<style>
-:root{--navy:#0b1f4d;--royal:#1f4fd1;--gold:#e8b931;--gold2:#c99a12;--white:#fff;
---bg:#f4f6fb;--card:#fff;--ink:#0b1f4d;--muted:#3a4a70;--line:#d5dcec;--fs:19px}
-body.night{--bg:#060f29;--card:#0f2257;--ink:#fff;--muted:#cfd8f2;--line:#28407f}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;overflow-x:hidden}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-size:var(--fs);line-height:1.55;background:var(--bg);color:var(--ink);padding-bottom:calc(84px + env(safe-area-inset-bottom))}
-header.top{position:sticky;top:0;z-index:20;background:var(--navy);color:#fff;display:flex;align-items:center;gap:6px;padding:8px 10px;padding-top:calc(8px + env(safe-area-inset-top))}
-header.top .brand{flex:1;min-width:0;font-weight:800;font-size:12px;letter-spacing:.04em;color:var(--gold);line-height:1.2}
-header.top button{background:transparent;border:2px solid var(--gold);color:#fff;border-radius:10px;min-width:44px;height:44px;font-size:14px;font-weight:700;padding:0 6px;flex:0 0 auto}
-main{max-width:720px;margin:0 auto;padding:14px}
-section.view{display:none}section.view.on{display:block}
-h1,h2,h3{line-height:1.25;margin:.4em 0}
-h2{font-size:1.35em}h3{font-size:1.12em}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:12px 0;box-shadow:0 2px 6px rgba(11,31,77,.08)}
-.hero{background:linear-gradient(160deg,#0b1f4d,#1f4fd1);color:#fff;border-radius:20px;padding:26px 18px;text-align:center;margin-top:6px}
-.hero .min{color:var(--gold);font-weight:800;letter-spacing:.06em;font-size:.8em}
-.hero h1{font-size:2em;margin:.3em 0;color:#fff}
-.hero .who{font-size:1.05em;font-weight:700}
-.hero .verse{background:rgba(255,255,255,.1);border-left:5px solid var(--gold);text-align:left;padding:12px;border-radius:10px;margin:16px 0;font-size:1em}
-.bigbtn{display:block;width:100%;background:var(--gold);color:#0b1f4d;border:0;border-radius:18px;font-size:1.45em;font-weight:900;padding:20px 10px;margin:10px 0;box-shadow:0 4px 0 var(--gold2);cursor:pointer}
-.bigbtn:active{transform:translateY(2px);box-shadow:0 2px 0 var(--gold2)}
-.btn{background:var(--royal);color:#fff;border:0;border-radius:12px;font-size:.95em;font-weight:700;padding:12px 14px;min-height:48px;cursor:pointer;margin:4px 4px 4px 0}
-.btn.gold{background:var(--gold);color:#0b1f4d}.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--royal)}
-.btn:disabled{opacity:.45}
-.small{font-size:.82em;color:var(--muted)}
-.tag{display:inline-block;font-size:.72em;font-weight:800;letter-spacing:.05em;padding:4px 9px;border-radius:999px;margin-bottom:6px}
-.tag.orig{background:var(--gold);color:#0b1f4d}.tag.sup{background:var(--royal);color:#fff}.tag.note{background:#5b6b91;color:#fff}
-.scripture{border-left:6px solid var(--gold);padding:10px 12px;background:rgba(232,185,49,.12);border-radius:10px;margin:10px 0;font-size:1.05em}
-.scripture .ref{display:block;font-weight:800;margin-top:6px;font-size:.85em;color:var(--royal)}
-body.night .scripture .ref{color:var(--gold)}
-.pre{white-space:pre-wrap;word-wrap:break-word;overflow-wrap:anywhere}
-/* player */
-#player{display:none}
-.stagebox{background:var(--navy);color:#fff;border-radius:18px;padding:18px;min-height:260px}
-.stagebox .stepl{color:var(--gold);font-weight:800;font-size:.85em;letter-spacing:.05em}
-.stagebox .cue{display:inline-block;background:var(--gold);color:#0b1f4d;font-weight:900;border-radius:8px;padding:3px 10px;margin:8px 0;font-size:.8em}
-.stagebox .main{font-size:1.3em;font-weight:700;margin-top:6px}
-.stagebox .ref{color:var(--gold);font-weight:800;margin-top:8px}
-.bar{height:12px;background:var(--line);border-radius:99px;overflow:hidden;margin:12px 0 4px}
-.bar>i{display:block;height:100%;background:var(--gold);width:0;transition:width .3s}
-.dbar{height:20px;border:2px solid var(--gold);background:var(--navy)}
-.rd{border:2px solid var(--royal);border-radius:14px;padding:10px;margin:10px 0}
-.rd .ctrls button{min-height:52px}
-.ctrls{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}
-.ctrls button{min-height:58px;border-radius:14px;border:0;background:var(--royal);color:#fff;font-weight:800;font-size:.8em;padding:4px}
-.ctrls button b{display:block;font-size:1.45em;line-height:1.1}
-.ctrls button.play{background:var(--gold);color:#0b1f4d}
-.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
-.opts label{font-size:.8em;font-weight:700}
-select,input[type=text],textarea{width:100%;font-size:16px;padding:10px;border-radius:10px;border:2px solid var(--line);background:var(--card);color:var(--ink);min-height:46px}
-.status{font-size:.85em;margin-top:8px;color:var(--muted);min-height:1.4em}
-/* nav */
-nav.bottom{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--navy);display:grid;grid-template-columns:repeat(5,1fr);padding-bottom:env(safe-area-inset-bottom);border-top:3px solid var(--gold)}
-nav.bottom button{background:transparent;border:0;color:#cfd8f2;font-size:11px;font-weight:700;padding:8px 2px;min-height:62px}
-nav.bottom button span{display:block;font-size:22px;line-height:1.1}
-nav.bottom button.on{color:var(--gold)}
-/* accordion */
-details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:10px 0;overflow:hidden}
-summary{list-style:none;cursor:pointer;padding:15px 16px;font-weight:800;font-size:1.02em;display:flex;justify-content:space-between;gap:8px;align-items:center}
-summary::-webkit-details-marker{display:none}
-summary:after{content:"＋";color:var(--royal);font-weight:900}
-details[open] summary:after{content:"－"}
-body.night summary:after{color:var(--gold)}
-details .in{padding:0 16px 16px}
-.daytabs{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin:8px 0}
-.daytabs button{border:2px solid var(--royal);background:var(--card);color:var(--ink);border-radius:10px;font-weight:800;min-height:46px;font-size:.85em;padding:0}
-.daytabs button.on{background:var(--royal);color:#fff}
-.decl{border:2px dashed var(--gold);border-radius:12px;padding:10px 12px;margin:8px 0;font-weight:700}
-.reveal{background:var(--royal);color:#fff;border-radius:10px;padding:12px;margin:8px 0;cursor:pointer;font-weight:700}
-.reveal .ans{display:none;margin-top:8px;font-weight:500;background:rgba(255,255,255,.12);padding:8px;border-radius:8px}
-.reveal.open .ans{display:block}
-.qopt{display:block;width:100%;text-align:left;margin:6px 0;padding:12px;border-radius:12px;border:2px solid var(--line);background:var(--card);color:var(--ink);font-size:.95em;min-height:50px}
-.qopt.ok{border-color:#178a3a;background:#d9f5e1;color:#0b3d1b}.qopt.no{border-color:#b3261e;background:#fbe0de;color:#5a0f0a}
-.flip{perspective:1000px;margin:10px 0}
-.flip .face{background:linear-gradient(160deg,#0b1f4d,#1f4fd1);color:#fff;border-radius:16px;padding:22px 16px;min-height:180px;display:flex;flex-direction:column;justify-content:center;text-align:center;cursor:pointer}
-.flip .face .big{font-size:1.25em;font-weight:800}
-.lvl{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
-.lvl button{min-height:50px;border-radius:12px;border:2px solid var(--royal);background:var(--card);color:var(--ink);font-weight:800;font-size:.85em}
-.lvl button.on{background:var(--royal);color:#fff}
-table{width:100%;border-collapse:collapse;font-size:.85em}td,th{border:1px solid var(--line);padding:6px;text-align:left;vertical-align:top;word-break:break-word}
-svg{max-width:100%;height:auto}
-a{color:var(--royal);word-break:break-word}body.night a{color:var(--gold)}
-.toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);background:var(--gold);color:#0b1f4d;font-weight:800;padding:10px 16px;border-radius:12px;display:none;z-index:50;max-width:90%}
-</style>
+<title>Dealing with the Evil Horns · Declare · L137</title>
+<meta name="description" content="Pastor Kiki Ocansey's October 14, 2026 prophetic direction, Dealing with the Evil Horns, with hands-free voice, repeat-after-me declarations, Bible study at three levels and progress tracking.">
+<meta property="og:title" content="Dealing with the Evil Horns · L137 Deliverance Ministry">
+<meta property="og:description" content="Pray Pastor Kiki Ocansey's 21 declarations hands-free. Psalm 75:10 KJV.">
+<meta property="og:image" content="cover.jpg">
+<meta name="theme-color" content="#0B1F4D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B1F4D'/%3E%3Cpath d='M16 5v22M9 12h14' stroke='%23E7C965' stroke-width='3.2' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,700;8..60,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="top">
-  <div class="brand">L137 DELIVERANCE<br>MINISTRY INTERNATIONAL</div>
-  <button id="fsDown" aria-label="Smaller text">A−</button>
-  <button id="fsUp" aria-label="Larger text">A+</button>
-  <button id="mode" aria-label="Switch to night mode">🌙</button>
-  <button id="share" aria-label="Share this app">Share</button>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <button class="brand" data-go="home" aria-label="Home">
+    <svg class="logo" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+      <rect x="1.5" y="1.5" width="37" height="37" rx="10" stroke="currentColor" stroke-width="2.4"/>
+      <path d="M20 8v24M13 15h14" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      <path d="M8 29c3-2 5-2 7 0M25 29c2-2 4-2 7 0" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round"/>
+    </svg>
+    <span class="brand-text"><b>Declare</b><small>L137 · Luke 1:37</small></span>
+  </button>
+  <div class="top-actions">
+    <button class="chip prog-chip" data-go="progress" aria-label="My progress"><span id="progChip">0%</span></button>
+    <button class="icon-btn" id="sizeBtn" aria-label="Text size">A<span class="sm">A</span></button>
+    <button class="icon-btn" id="modeBtn" aria-label="Switch day or night mode">
+      <svg viewBox="0 0 24 24" class="i-sun" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg>
+      <svg viewBox="0 0 24 24" class="i-moon" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z" fill="currentColor"/></svg>
+    </button>
+  </div>
 </header>
 
-<main>
-<!-- HOME / PRAY -->
-<section class="view on" id="v-pray">
-  <div id="home">
-    <div class="hero">
-      <div class="min">L137 DELIVERANCE MINISTRY INTERNATIONAL</div>
-      <h1>DEALING WITH THE EVIL HORNS</h1>
-      <div class="who">Pastor Kiki Ocansey</div>
-      <div>October 14, 2026</div>
-      <div class="verse">“All the horns of the wicked also will I cut off; but the horns of the righteous shall be exalted.”<br><b style="color:var(--gold)">Psalm 75:10 KJV</b></div>
-      <button class="bigbtn" id="startBtn">▶ START PRAYING</button>
-      <div id="resumeWrap" style="display:none"><button class="btn ghost" style="color:#fff;border-color:var(--gold);width:100%" id="resumeBtn">Continue where I stopped</button></div>
-    </div>
-    <p class="small" style="text-align:center">The narrator is your phone's built-in reading voice, not Pastor Kiki's voice. Nothing you type in this app is sent anywhere.</p>
-  </div>
+<main id="main">
 
-  <div id="player">
-    <div class="stagebox" aria-live="polite">
-      <div class="stepl" id="pStep">STEP 1 — PROPHETIC DIRECTION</div>
-      <div id="pCue"></div>
-      <div class="main" id="pText"></div>
-      <div class="ref" id="pRef"></div>
+<!-- HOME -->
+<section class="view" id="v-home" data-view="home">
+  <div class="wrap">
+    <figure class="cover"><img src="cover.jpg" alt="A cross on a hill with golden sunrise rays in a royal blue sky" width="1200" height="800"></figure>
+    <p class="eyebrow">Wednesday, October 14, 2026 · Prophetic Direction · Fasting and Prayer</p>
+    <h1 class="title">Dealing with the Evil Horns</h1>
+    <div class="scrip home-scrip"><b>Psalm 75:10 KJV</b><p>All the horns of the wicked also will I cut off; but the horns of the righteous shall be exalted.</p></div>
+    <p class="lede">Listen to Pastor Kiki's direction, read the three Scriptures, and declare all 21 declarations aloud.</p>
+    <p class="attrib">Pastor Kiki Ocansey · L137 Deliverance Ministry International</p>
+
+<div class="modes" role="radiogroup" aria-label="How do you want to pray?">
+      <p class="lbl">How do you want to pray?</p>
+      <button class="mode-btn" data-pmode="listen"><b>🎧 Listen only</b><small>Reads straight through with no pauses</small></button>
+      <button class="mode-btn" data-pmode="repeat"><b>🗣️ Repeat after me</b><small>Reads a line, gives you time to declare, then carries on by itself</small></button>
+      <button class="mode-btn" data-pmode="study"><b>📖 Study mode</b><small>Reads one line, shows the Bible study under it, then waits for you to tap ⏭</small></button>
     </div>
-    <div class="small" style="margin-top:10px"><b id="dLab">Declaration progress: 0 of 21 completed (0%)</b></div>
-    <div class="bar dbar" role="progressbar" aria-valuemin="0" aria-valuemax="21" aria-valuenow="0" id="dBarWrap" aria-label="Declarations completed"><i id="dBar"></i></div>
-    <div class="small" id="pCount">Whole prayer: part 1 of 30</div>
-    <div class="bar" style="height:6px"><i id="pBar" style="background:var(--royal)"></i></div>
-    <div class="ctrls">
-      <button id="cBack"><b>⏮</b>Back</button>
-      <button id="cPlay" class="play"><b>▶</b>Play</button>
-      <button id="cStop"><b>⏹</b>Stop</button>
-      <button id="cNext"><b>⏭</b>Next</button>
+
+    <button class="btn btn-resume wide" id="resumeHome" hidden>▶ Resume where I left off<small id="resumeHomeLbl"></small></button>
+
+    <button class="btn btn-hero" id="startAll">
+      <span class="btn-ico" aria-hidden="true">▶</span>
+      <span><b>START PRAYING</b><small>4 instructions · 3 Scriptures · 21 declarations · closing</small></span>
+    </button>
+    <p class="hint">Press once and set the phone down. Keep the screen on while it reads (see the guide, step 4).</p>
+
+    <div class="home-grid">
+      <button class="tile" data-go="studio"><span class="t-ico" style="--c:#221E1A">🗣️</span><b>Declarations</b><small>All of Pastor Kiki's words, color-coded</small></button>
+      <button class="tile" data-go="generator"><span class="t-ico" style="--c:#6E2F5A">🔁</span><b>Pray a Group</b><small>Pray one group of declarations hands-free</small></button>
+      <button class="tile" data-go="blessings"><span class="t-ico" style="--c:#4F7A2E">👨‍👩‍👧</span><b>My Family Prayers</b><small>Optional: the 3 Scriptures over your loved ones' names</small></button>
+      <button class="tile" data-go="learn"><span class="t-ico" style="--c:#1E40AF">📖</span><b>Understanding the Evil Horns</b><small>Bible study · 3 levels · quizzes · memory cards</small></button>
+      <button class="tile" data-go="progress"><span class="t-ico" style="--c:#B6871A">🏆</span><b>My Progress</b><small id="homeProg">Nothing started yet</small></button>
+      <button class="tile" id="shareApp"><span class="t-ico" style="--c:#221E1A">📤</span><b>Share</b><small>WhatsApp, text or copy link</small></button>
     </div>
-    <div class="ctrls" style="grid-template-columns:1fr 1fr">
-      <button id="cRepeat"><b>🔁</b>Repeat this one</button>
-      <button id="cHome"><b>🏠</b>Home</button>
+
+    <div class="ckey home-key" aria-label="Color key">
+      <p class="ckey-t">🔑 What the colors mean</p>
+      <div class="ckey-row"><i style="background:#6E2F5A"></i><span><b class="c-ins">Purple</b> · Pastor Kiki's instructions</span></div>
+      <div class="ckey-row"><i style="background:#1E40AF"></i><span><b class="c-scr">Royal blue</b> · Scripture</span></div>
+      <div class="ckey-row"><i style="background:#C24A16"></i><span><b class="c-pour">Orange-red</b> · As you pour</span></div>
+      <div class="ckey-row"><i style="background:#221E1A" class="k-blk"></i><span><b class="c-dec">Black<span class="night-only"> (white at night)</span></b> · All other declarations</span></div>
+      <div class="ckey-row"><i class="k-orig"></i><span><b>Blue frame</b> · Pastor Kiki's original words or the Bible text</span></div>
+      <div class="ckey-row"><i class="k-supp"></i><span><b>Grey dotted box</b> · Supplementary Biblical Study (not part of Pastor Kiki's direction)</span></div>
     </div>
-    <div class="opts">
-      <div><label for="oSpeed">Reading speed</label>
-        <select id="oSpeed"><option value="0.75">Slow</option><option value="0.9" selected>Normal</option><option value="1.05">A little faster</option><option value="1.2">Fast</option></select></div>
-      <div><label for="oPause">Time to repeat</label>
-        <select id="oPause"><option value="1">Normal pause</option><option value="1.6">Longer pause</option><option value="2.3">Longest pause</option></select></div>
-      <div><label for="oMode">How to pray</label>
-        <select id="oMode"><option value="repeat" selected>Repeat after me</option><option value="listen">Listen only</option></select></div>
-      <div><label for="oAuto">Hands-free</label>
-        <select id="oAuto"><option value="1" selected>Go on by itself</option><option value="0">I press Next</option></select></div>
-    </div>
-    <div class="status" id="pStatus"></div>
+
+    <a class="btn btn-primary wide guide-btn" href="guide.html">📘 HOW TO USE THIS APP · step-by-step guide</a>
+
+    <details class="how">
+      <summary>Quick tips</summary>
+      <ol>
+        <li>🔊 <b>LISTEN</b>: tap ▶ on any card, or START HANDS-FREE to go through everything.</li>
+        <li>🗣️ <b>SAY</b>: when you hear "Your turn", declare the words aloud.</li>
+        <li>⏮ ⏸ ⏹ ⏭: the player at the bottom goes back, pauses, stops and skips forward.</li>
+                <li>🏆 Your progress is kept on this phone.</li>
+      </ol>
+    </details>
   </div>
 </section>
 
-<!-- DIRECTION / TRANSCRIPT -->
-<section class="view" id="v-word">
-  <h2>Original Words</h2>
-  <div class="card">
-    <span class="tag orig">ORIGINAL PROPHETIC DIRECTION — PASTOR KIKI OCANSEY</span>
-    <p class="small">Exactly as submitted, October 14, 2026. Nothing has been changed, shortened or added.</p>
-    <button class="btn" id="readDir">🔊 Listen to the whole direction</button> <button class="btn ghost" id="stopDir">⏹ Stop</button> <button class="btn ghost" id="copyDir">Copy text</button>
-    <div class="pre" id="dirText" style="margin-top:12px"></div>
-  </div>
-  <div class="card">
-    <span class="tag note">CLUBHOUSE TEACHING NOTES — THE SEVEN EVIL HORNS</span>
-    <p class="small">A participant's handwritten-style notes from Pastor Kiki's Clubhouse teaching “Dealing with Evil Horns” (noted October 13, 2026). These are notes, not word-for-word quotations.</p>
-    <div id="notesList"></div>
-    <p><b>On the carpenters:</b> God has prepared the carpenters to cut down the horns — Zechariah 1:20–21.</p>
-    <p><b>On the four craftsmen:</b> 4 carpenters, or craftsmen came to destroy the horns as the horns can never destroy what God created.</p>
-  </div>
-  <div class="card">
-    <span class="tag note">FULL SERMON TRANSCRIPT</span>
-    <p>The complete word-for-word Clubhouse transcript is not included yet. It will be added here once a clean copy is approved, with congregants' names, testimonies and personal details removed.</p>
+<!-- STUDIO -->
+<section class="view" id="v-studio" data-view="studio" hidden>
+  <div class="wrap">
+    <p class="eyebrow">Declarations</p>
+    <h2 class="h2">Pastor Kiki's words</h2>
+    <div class="ckey" aria-label="Color key">
+      <p class="ckey-t">🔑 What the colors mean</p>
+      <div class="ckey-row"><i style="background:#6E2F5A"></i><span><b class="c-ins">Purple</b> · Pastor Kiki's instructions</span></div>
+      <div class="ckey-row"><i style="background:#1E40AF"></i><span><b class="c-scr">Royal blue</b> · Scripture</span></div>
+      <div class="ckey-row"><i style="background:#C24A16"></i><span><b class="c-pour">Orange-red</b> · As you pour</span></div>
+      <div class="ckey-row"><i style="background:#221E1A" class="k-blk"></i><span><b class="c-dec">Black<span class="night-only"> (white at night)</span></b> · All other declarations</span></div>
+      <div class="ckey-row"><i class="k-orig"></i><span><b>Blue frame</b> · Pastor Kiki's original words or the Bible text</span></div>
+      <div class="ckey-row"><i class="k-supp"></i><span><b>Grey dotted box</b> · Supplementary Biblical Study (not part of Pastor Kiki's direction)</span></div>
+    </div>
+    <div class="panel">
+      <p class="lbl">Show</p>
+      <div class="seg wrapseg" id="filterSeg" role="radiogroup" aria-label="Filter">
+        <button data-f="all" aria-pressed="true">All</button>
+        <button data-f="instruction">Instructions</button>
+        <button data-f="scripture">Scriptures</button>
+        <button data-f="declaration">Declarations</button>
+        <button data-f="action">As you pour</button>
+      </div>
+      <button class="btn btn-primary wide" id="playStudio" style="margin-top:12px">▶ Play what's shown</button>
+      <label class="lbl" for="startFrom">Or start from any line</label>
+      <select id="startFrom" class="input"></select>
+    </div>
+
+    <div class="orig-wrap">
+      <div class="orig-head">
+        <p class="orig-eyebrow">Pastor Kiki's original prophetic direction</p>
+        <p class="orig-sub">L137 Deliverance Ministry · Pastor Kiki Ocansey · Clubhouse · Wednesday, October 14, 2026 · Dealing with the Evil Horns · Fasting and Prayer</p>
+        <p class="orig-sub">Shown exactly as given. 💡 Understand opens a separate Bible study.</p>
+      </div>
+      <div id="phraseList" class="phrase-list"></div>
+    </div>
   </div>
 </section>
 
-<!-- DEVOTIONALS -->
-<section class="view" id="v-dev">
-  <h2>7-Day Devotional</h2>
-  <p class="small">One horn a day, from Pastor Kiki's seven horns. Each day has its Scripture, matching declarations from her October 14 direction, a short study, a prayer and a question.</p>
-  <div class="daytabs" id="dayTabs"></div>
-  <div id="dayBody"></div>
-</section>
+<!-- GENERATOR -->
+<section class="view" id="v-generator" data-view="generator" hidden>
+  <div class="wrap">
+    <p class="eyebrow">Pray a Group</p>
+    <h2 class="h2">Pray one group of declarations</h2>
+    <p class="muted">Choose a group of Pastor Kiki's declarations and pray them hands-free. Every line comes from her direction or the King James Bible.</p>
 
-<!-- STUDY -->
-<section class="view" id="v-study">
-  <h2>Study Notes</h2>
-  <p class="small">Optional. <span class="tag sup">SUPPLEMENTARY BIBLICAL STUDY</span> is separate from Pastor Kiki's original words.</p>
+    <div class="panel" id="genSetup">
+      <p class="lbl">What do you want to pray?</p>
+      <div class="focus-list" id="focusList"></div>
 
-  <details open><summary>📖 The Vision of the Four Horns</summary><div class="in">
-    <div class="scripture" id="zechFull"></div>
-    <button class="btn" data-say="zech">🔊 Listen</button>
-    <p><b>Tap each question. Think first, then reveal.</b></p>
-    <div id="vqs"></div>
-  </div></details>
+      <p class="lbl">Order</p>
+      <div class="seg" id="orderSeg">
+        <button data-o="orig" aria-pressed="true">Pastor Kiki's order</button>
+        <button data-o="shuffle">Mix it up</button>
+      </div>
 
-  <details><summary>🗺️ Picture It: Horns and Craftsmen</summary><div class="in">
-    <svg viewBox="0 0 360 300" role="img" aria-label="Diagram: four horns scatter, four craftsmen cast them down, the head is lifted">
-      <rect x="0" y="0" width="360" height="300" rx="14" fill="#0b1f4d"/>
-      <text x="180" y="28" fill="#e8b931" font-size="15" font-weight="800" text-anchor="middle">Zechariah 1:18–21</text>
-      <g fill="#b3261e"><path d="M30 90 q20 -45 40 -40 q-12 12 -18 40z"/><path d="M110 90 q20 -45 40 -40 q-12 12 -18 40z"/><path d="M190 90 q20 -45 40 -40 q-12 12 -18 40z"/><path d="M270 90 q20 -45 40 -40 q-12 12 -18 40z"/></g>
-      <text x="180" y="112" fill="#fff" font-size="13" text-anchor="middle">4 HORNS — “scattered Judah, Israel, and Jerusalem” (v.19)</text>
-      <text x="180" y="140" fill="#e8b931" font-size="22" text-anchor="middle">⬇</text>
-      <g fill="#e8b931"><rect x="35" y="155" width="40" height="30" rx="6"/><rect x="115" y="155" width="40" height="30" rx="6"/><rect x="195" y="155" width="40" height="30" rx="6"/><rect x="275" y="155" width="40" height="30" rx="6"/></g>
-      <g font-size="18" text-anchor="middle"><text x="55" y="177">🔨</text><text x="135" y="177">🔨</text><text x="215" y="177">🔨</text><text x="295" y="177">🔨</text></g>
-      <text x="180" y="205" fill="#fff" font-size="13" text-anchor="middle">4 CARPENTERS — “come to fray them, to cast out the horns” (v.21)</text>
-      <text x="180" y="232" fill="#e8b931" font-size="22" text-anchor="middle">⬇</text>
-      <text x="180" y="262" fill="#fff" font-size="14" font-weight="800" text-anchor="middle">“the lifter up of mine head” — Psalm 3:3</text>
-      <text x="180" y="284" fill="#cfd8f2" font-size="12" text-anchor="middle">The horns stopped heads from lifting. The LORD lifts the head.</text>
-    </svg>
-  </div></details>
+      <label class="switch-row"><input type="checkbox" id="genNames"> <span>Add the 3 Scriptures over our names at the end (optional, not part of the direction)</span></label>
+      <label class="switch-row"><input type="checkbox" id="genThanks" checked> <span>Close with Pastor Kiki's closing direction and blessing</span></label>
 
-  <details><summary>🔤 Word Study (Hebrew)</summary><div class="in" id="words"></div></details>
+      <button class="btn btn-hero" id="genStart"><span class="btn-ico" aria-hidden="true">🔁</span><span><b>START PRAYING HANDS-FREE</b><small id="genCount">—</small></span></button>
+    </div>
 
-  <details><summary>📚 UNDERSTANDING THE EVIL HORNS — 3 Levels &amp; Quizzes</summary><div class="in">
-    <p class="small">Choose a level. Press ▶ LISTEN to hear it read aloud.</p>
-    <div class="lvl" id="lvlTabs"><button data-l="b" class="on">Beginner</button><button data-l="i">Intermediate</button><button data-l="a">Advanced</button></div>
-    <button class="btn gold" id="lvListen" style="width:100%;margin-top:10px">▶ LISTEN — this level</button>
-    <button class="btn ghost" id="lvAll" style="width:100%">▶ PLAY ALL LEVELS</button>
-    <div id="lvReader"></div>
-    <div id="lvlBody"></div>
-    <div class="card" id="quiz"></div>
-  </div></details>
-
-  <details><summary>🃏 Scripture Memory Cards</summary><div class="in">
-    <div class="small" id="mcCount"></div>
-    <div class="flip"><div class="face" id="mcFace"></div></div>
-    <button class="btn" id="mcPrev">⬅ Back</button><button class="btn gold" id="mcFlip">Show / hide verse</button><button class="btn" id="mcNext">Next ➡</button>
-    <button class="btn ghost" id="mcBlank">🧩 Fill-in practice</button>
-    <div id="mcReader"></div>
-    <div id="mcPractice"></div>
-  </div></details>
-
-  <details><summary>👨‍👩‍👧 My Family Prayers</summary><div class="in">
-    <span class="tag sup">PERSONALIZED PRAYERS — NOT PASTOR KIKI'S ORIGINAL DECLARATIONS</span>
-    <p class="small">Type names once. They stay only on this phone.</p>
-    <label>My name</label><input type="text" id="fMe">
-    <label>Spouse</label><input type="text" id="fSp">
-    <label>Children (separate with commas)</label><input type="text" id="fCh">
-    <label>Parents</label><input type="text" id="fPa">
-    <label>Other family and loved ones</label><input type="text" id="fOt">
-    <button class="btn gold" id="fMake">Make my family prayer</button>
-    <div id="fOut"></div>
-  </div></details>
-
-  <details><summary>📜 Sources</summary><div class="in small" id="sources"></div></details>
-</section>
-
-<!-- BUILD -->
-<section class="view" id="v-build">
-  <h2>Master Build Instructions</h2>
-  <div class="card">
-    <span class="tag note">PROJECT RECORD</span>
-    <table><tr><th>Title</th><td>Dealing with the Evil Horns</td></tr><tr><th>Minister</th><td>Pastor Kiki Ocansey</td></tr><tr><th>Date</th><td>October 14, 2026</td></tr><tr><th>Link</th><td id="liveUrl">This page</td></tr><tr><th>Earlier tool (unchanged)</th><td><a href="https://l137-declare-in-color.vercel.app" target="_blank" rel="noopener">l137-declare-in-color.vercel.app</a></td></tr></table>
+    <div id="genStage" class="gen-stage" hidden>
+      <div class="gen-top">
+        <span id="genPalName" class="pal-name">🔥 Praying</span>
+        <span id="genPos" class="gen-pos">1 of 1</span>
+      </div>
+      <div class="gen-bar"><i id="genBar"></i></div>
+      <div class="gen-card" id="genCard" aria-live="polite">
+        <p class="gen-kind" id="genKind"></p>
+        <p class="gen-text" id="genText"></p>
+        <p class="gen-ref" id="genRef"></p>
+      </div>
+      <div class="row gap center">
+        <button class="btn btn-sm" id="genPrev">⏮ Back</button>
+                        <button class="btn btn-sm" id="genNew">↺ New session</button>
+      </div>
+    </div>
   </div>
-  <details><summary>How this app follows the instructions</summary><div class="in" id="checklist"></div></details>
-  <details><summary>Full instructions as submitted</summary><div class="in">
-    <div class="pre" id="masterText"></div>
-  </div></details>
-  <details><summary>Approved ministers and sources</summary><div class="in">
-    <div class="pre" id="minText"></div>
-  </div></details>
 </section>
+
+<!-- BLESSINGS -->
+<section class="view" id="v-blessings" data-view="blessings" hidden>
+  <div class="wrap">
+    <p class="eyebrow">Optional · Personalized</p>
+    <h2 class="h2">My Family Prayers</h2>
+    <p class="supp-banner">🙏🏽 <b>Personalized prayers — not Pastor Kiki's original declarations.</b> Her declarations are never changed. Here you can read the three Scriptures from her direction, or say them over the names of your loved ones.</p>
+    <p class="lbl">Choose how to read</p>
+    <div class="dmode" role="radiogroup" aria-label="How to read">
+      <button class="mode-btn" data-dm="orig"><b>📜 Read the original Scripture</b><small>Psalm 75:10, Psalm 3:3 and Revelation 12:11, exactly as written in the King James Bible</small></button>
+      <button class="mode-btn" data-dm="pers"><b>🙏🏽 Personalized prayer</b><small>Each verse spoken over the names you add. Not a direct Bible quotation.</small></button>
+    </div>
+    <div class="panel" id="namesPanel">
+      <p class="lbl">Your name, spouse, children, parents and loved ones</p>
+      <div id="nameChips" class="name-chips"></div>
+      <form id="nameForm" class="row gap">
+        <input id="nameInput" class="input grow" placeholder="Add a name" maxlength="40" autocomplete="off">
+        <button class="btn btn-sm" type="submit">Add</button>
+      </form>
+      <p class="privacy">🔒 <b>Your names stay on this phone.</b> They are never sent to anyone. Sharing the app does not share your names.</p>
+      <div class="row gap">
+        <button class="btn btn-sm" id="shareNoNames">📤 Share the app (no names)</button>
+        <button class="btn btn-sm" id="familyLink">🔗 Copy my family link (with names)</button>
+      </div>
+    </div>
+    <details class="why supp">
+      <summary>💡 Why pray Scripture over names?</summary>
+      <div class="why-body">
+        <p class="supp-lbl">Supplementary Biblical Study — Not Part of Pastor Kiki's Original Direction</p>
+        <p>Bible teacher Derek Prince put names and "us" into the verses he proclaimed. He said:</p>
+        <blockquote class="teach">"I think almost every night Ruth and I proclaim on her behalf, 'Regula shall not die but live and declare the works of the Lord.'"<cite><a href="https://www.derekprince.com/sermons/108" target="_blank" rel="noopener">Derek Prince, Fierce Times Are Coming</a></cite></blockquote>
+        <div class="scrip"><b>Psalm 118:17 KJV</b><p>I shall not die, but live, and declare the works of the LORD.</p></div>
+        <p>Each card shows the King James verse first, in a blue frame. The personalized prayer is shown separately in a grey dotted box.</p>
+      </div>
+    </details>
+    <div class="row gap">
+      <button class="btn btn-primary" id="playBless">▶ Play all 3</button>
+    </div>
+    <div class="mini-prog"><span>Scriptures declared</span><b id="blessCount">0 of 3</b><div class="bar"><i id="blessBar"></i></div></div>
+    <div id="blessList" class="bless-list"></div>
+    <ol id="fullCh" class="full-list" hidden></ol>
+  </div>
+</section>
+
+<!-- LEARN -->
+<section class="view" id="v-learn" data-view="learn" hidden>
+  <div class="wrap">
+    <p class="eyebrow">Learn</p>
+    <h2 class="h2">Understanding the Evil Horns</h2>
+    <p class="supp-banner">📘 <b>Supplementary Biblical Study — Not Part of Pastor Kiki's Original Direction.</b> This is extra teaching from the King James Bible and published Bible teachers, to help you understand. Pastor Kiki's original words are on the 🗣️ Declare page.</p>
+    <p class="muted">Pick your level.</p>
+    <div class="seg levels" id="levelSeg" role="tablist">
+      <button data-l="b" role="tab" aria-selected="true">🌱 Beginner</button>
+      <button data-l="i" role="tab">🌿 Intermediate</button>
+      <button data-l="a" role="tab">🌳 Advanced</button>
+    </div>
+    <div class="row gap" style="margin:10px 0"><button class="btn btn-primary" id="lvListen">▶ LISTEN · this level</button><button class="btn" id="lvAll">▶ PLAY ALL LEVELS</button></div>
+    <div id="levelBody"></div>
+
+    <h3 class="h3 mt">Scripture memory cards</h3>
+    <p class="muted small">Try to say the verse first, then tap the card to reveal it.</p>
+    <div id="flashBox" class="flash-box"></div>
+
+    <h3 class="h3 mt">Final quiz</h3>
+    <div id="quizBox"></div>
+  </div>
+</section>
+
+<!-- PROGRESS -->
+<section class="view" id="v-progress" data-view="progress" hidden>
+  <div class="wrap">
+    <p class="eyebrow">My Progress</p>
+    <h2 class="h2">How far you've come</h2>
+    <div class="ring-wrap">
+      <svg viewBox="0 0 120 120" class="ring" aria-hidden="true"><circle cx="60" cy="60" r="52" class="ring-bg"/><circle cx="60" cy="60" r="52" class="ring-fg" id="ringFg"/></svg>
+      <div class="ring-num"><b id="ringPct">0%</b><small>complete</small></div>
+    </div>
+    <div id="nowBox" class="now-box"></div>
+    <div id="progList" class="prog-list"></div>
+    <h3 class="h3 mt">Prayer groups completed</h3>
+    <div id="groupsDone" class="todo-list"></div>
+    <h3 class="h3 mt">Declarations still to pray</h3>
+    <p class="muted small">Tap a number to go to that declaration. Tap ✔ I declared it on any card to mark it yourself.</p>
+    <div id="todoList" class="todo-list"></div>
+    <div class="row gap mt">
+      <button class="btn btn-sm" id="resetProg">Start again</button>
+    </div>
+    <p class="muted small mt">Progress only helps you keep your place. It is not a measure of spiritual power, holiness or deliverance.</p>
+  </div>
+</section>
+
 </main>
 
-<nav class="bottom" id="nav">
-  <button data-v="pray" class="on"><span>🙏🏽</span>Pray</button>
-  <button data-v="word"><span>📜</span>Original</button>
-  <button data-v="dev"><span>📅</span>Devotional</button>
-  <button data-v="study"><span>📖</span>Study</button>
-  <button data-v="build"><span>🛠️</span>Build</button>
-</nav>
-<div class="toast" id="toast"></div>
-
-<script>
-const O = {"master": "L137 MASTER BUILD & DEPLOYMENT INSTRUCTIONS\n\nDEALING WITH THE EVIL HORNS\n\nOctober 14, 2026 | Pastor Kiki Ocansey\n\nPRIMARY INSTRUCTION\n\nBuild and publish a complete, functioning, mobile-friendly Christian interactive prophetic prayer and Bible-study application for:\n\nL137 DELIVERANCE MINISTRY INTERNATIONAL\n\nTITLE: DEALING WITH THE EVIL HORNS\n\nMINISTER: PASTOR KIKI OCANSEY\n\nDATE: OCTOBER 14, 2026\n\nThis application is based on Pastor Kiki’s prophetic direction given on Clubhouse and will be shared with approximately 2,000 participants.\n\nOur previous interactive tool was:\n\nhttps://l137-declare-in-color.vercel.app\n\nUse it as a reference for the features we previously developed, but create a new application that is significantly easier to use.\n\n1. PERMANENT WEBSITE PRESERVATION POLICY\n\nABSOLUTELY NO EXISTING L137 WEBSITE, APPLICATION, FILE, OR PROJECT MAY BE REPLACED, OVERWRITTEN, DELETED, OR MODIFIED.\n\nThis is a permanent requirement for all future L137 interactive tools.\n\n* Use my existing Vercel account.\n* Create a completely NEW Vercel project for this assignment.\n* Do not redeploy into the existing October 7 project.\n* Do not change the previous website.\n* Do not reuse an existing project’s deployment settings in a way that could overwrite it.\n* Give the October 14 tool its own unique HTTPS address.\n* Preserve all previously published tools.\n* Every future prophetic direction must receive its own separate project and link.\n* Maintain an organized record of project titles, dates, and URLs.\n\nSuggested new project name:\n\nl137-evil-horns-october-14-2026\n\nThe exact HTTPS address must be confirmed after deployment. Do not invent a live link.\n\nBefore publishing, verify that the selected Vercel project is new and that no existing project will be changed.\n\n2. PRESERVE PASTOR KIKI’S ORIGINAL WORDS\n\nI will provide the complete original October 14 prophetic direction.\n\nPreserve every word exactly as submitted.\n\nInclude:\n\n* The original title.\n* Fasting and prayer instructions.\n* All three KJV Scriptures.\n* All four original instructions.\n* All 21 original declarations.\n* The original closing instruction.\n* The original blessing.\n\nPreserve the order, emphasis, punctuation, and wording.\n\nDo not summarize, rewrite, shorten, soften, embellish, or reinterpret the original prophetic direction.\n\nClearly separate original prophetic directions from supplementary biblical teaching.\n\nDo not add new prophetic actions, instructions, or declarations and attribute them to Pastor Kiki.\n\n3. SIMPLE ONE-BUTTON HOME SCREEN\n\nThe home screen should display:\n\nL137 DELIVERANCE MINISTRY INTERNATIONAL\n\nDEALING WITH THE EVIL HORNS\n\nPastor Kiki Ocansey\n\nOctober 14, 2026\n\nPsalm 75:10 KJV\n\nDisplay one large button:\n\n▶ START PRAYING\n\nWhen the participant presses START PRAYING, the guided prayer begins.\n\nDo not display complicated menus, multiple dashboards, or mandatory setup screens.\n\nThe application should be easy enough for elderly participants and beginners to use without an instruction manual.\n\n4. COMPLETE GUIDED PRAYER EXPERIENCE\n\nThe application must automatically guide participants through:\n\nSTEP 1 — PROPHETIC DIRECTION\n\nRead Pastor Kiki’s original instructions aloud.\n\nSTEP 2 — SCRIPTURE READING\n\nRead all three original KJV Scriptures aloud:\n\n* Psalm 75:10\n* Psalm 3:3\n* Revelation 12:11\n\nSTEP 3 — PRAYER DECLARATIONS\n\nRead all 21 original declarations in sequence.\n\nBefore each declaration, the narrator says:\n\n“Repeat after me.”\n\nRead the declaration clearly.\n\nPause long enough for participants to repeat it.\n\nAutomatically advance to the next declaration.\n\nSTEP 4 — COMPLETION\n\nRead Pastor Kiki’s original closing direction and blessing.\n\nDo not interrupt the prayer with quizzes, advertisements, or unnecessary explanations.\n\n5. AUDIO PLAYER REQUIREMENTS\n\nProvide working:\n\n* Play\n* Pause\n* Resume\n* Stop\n* Rewind\n* Forward\n* Repeat\n* Adjustable speed\n* Repeat-after-me pauses\n* Hands-free listening\n* Automatic progression\n\nAllow participants to choose longer pauses when needed.\n\nUse clear, natural English narration.\n\nDo not imitate Pastor Kiki’s actual voice without authorization.\n\nThe audio should function on supported iPhone and Samsung phones, other Android devices, and desktop browsers.\n\nUse responsive layouts and controls that are tested specifically on both iPhone and Samsung phone screens. Ensure buttons, text, audio controls, progress indicators, and study-level controls are visible, readable, and usable on both devices.\n\nAccount for mobile browser limitations, including speech synthesis availability and restrictions on background playback.\n\nDo not claim a feature works until it has been tested on supported iPhone and Samsung devices or clearly identify any untested features.\n\n6. MOBILE-FIRST DESIGN\n\nUse:\n\n* Navy blue\n* Royal blue\n* Gold\n* White\n\nProvide:\n\n* Large readable Scriptures.\n* Large prayer text.\n* High-contrast buttons.\n* No horizontal scrolling.\n* Minimal navigation.\n* Clear progress indicators.\n* Accessible font sizes.\n* Portrait-friendly layouts.\n* Easy scrolling.\n* Simple instructions.\n* Responsive layouts optimized for both iPhone and Samsung phones.\n\nUse a single-column layout on mobile.\n\nTest the application in portrait mode on both iPhone and Samsung devices. Ensure that no content, buttons, audio controls, progress bars, study-level controls, or quiz options are cut off, hidden, or difficult to tap.\n\n7. THREE OPTIONAL BIBLE STUDY LEVELS\n\nCreate a separate section called:\n\nUNDERSTANDING THE EVIL HORNS\n\nThis section must not interrupt the guided prayer.\n\nThe application’s voice prompt must read the content of all three study levels aloud when the participant selects them:\n\n* Beginner\n* Intermediate\n* Advanced\n\nEach level must include a clearly labeled ▶ LISTEN or ▶ READ ALOUD button.\n\nThe voice prompt must:\n\n* Announce the selected level.\n* Read the complete lesson content aloud.\n* Read the relevant Scriptures aloud.\n* Read the explanations aloud.\n* Read the quiz instructions aloud.\n* Pause between sections.\n* Allow Play, Pause, Resume, Stop, Rewind, Forward, Repeat, and speed adjustment where supported.\n* Never begin reading all three levels automatically unless the participant chooses an option such as PLAY ALL LEVELS.\n* Clearly announce when one level ends and the next level begins.\n* Work with responsive controls on both iPhone and Samsung phones.\n\nBEGINNER\n\nExplain the biblical meaning of horns, Psalm 75:10, Psalm 3:3, and Revelation 12:11.\n\nUse simple language, complete KJV verses, and verified biblical sources.\n\nInclude five quiz questions.\n\nINTERMEDIATE\n\nStudy Zechariah 1:18–21, including the four horns and four carpenters.\n\nExplain the historical context, prophetic imagery, and relevant cross-references.\n\nInclude seven quiz questions.\n\nADVANCED\n\nInclude Hebrew word studies, Strong’s Concordance, biblical lexicons, historical background, established commentaries, and documented deliverance-ministry teachings.\n\nInclude ten challenging quiz questions.\n\nClearly distinguish the original meaning of Scripture from contemporary deliverance interpretations.\n\n8. APPROVED BIBLICAL RESEARCH\n\nUse only the separately supplied L137 approved list of 26 ministers and the following biblical research sources.\n\nPrimary Bible translation:\n\nKing James Version (KJV).\n\nLexicons and concordances:\n\n* Strong’s Exhaustive Concordance\n* Brown–Driver–Briggs Hebrew Lexicon\n* Thayer’s Greek Lexicon\n\nBible commentaries:\n\n* Matthew Henry\n* John Gill\n* The MacArthur Bible Commentary\n* Keil and Delitzsch\n* Jamieson–Fausset–Brown\n\nFor deliverance teaching, use verifiable sermons, books, and publications by approved ministers.\n\nDo not invent quotations, sermons, biblical interpretations, or prophetic statements.\n\nIdentify the author and source of every quotation.\n\nDo not present a paraphrase as a direct quotation.\n\nAvoid generic AI-generated spiritual language.\n\n9. PERSONALIZED FAMILY PRAYERS\n\nCreate an optional section:\n\nMY FAMILY PRAYERS\n\nAllow participants to enter:\n\n* Their own name.\n* Spouse’s name.\n* Children’s names.\n* Parents’ names.\n* Other loved ones.\n\nEnter names once and reuse them.\n\nCreate a separate personalized Scripture-reading and prayer section.\n\nNever alter Pastor Kiki’s original declarations to insert names.\n\nAllow participants to listen to, copy, and share personalized Scripture cards.\n\nKeep personal names on the participant’s device unless they explicitly authorize sharing.\n\n10. INTERACTIVE QUIZZES\n\nInclude:\n\n* Beginner: 5 questions.\n* Intermediate: 7 questions.\n* Advanced: 10 questions.\n\nEach quiz must include:\n\n* Multiple-choice answers.\n* Immediate feedback.\n* Correct answer.\n* Supporting KJV Scripture.\n* Sourced explanation.\n* Final score.\n* Retry option.\n* Optional voice prompt that reads each question, answer choice, feedback message, and explanation aloud.\n\nTest biblical understanding rather than unsupported spiritual claims.\n\n11. SCRIPTURE MEMORY CARDS\n\nCreate interactive Scripture cards for:\n\n* Psalm 75:10\n* Psalm 3:3\n* Revelation 12:11\n* Zechariah 1:18–21\n\nInclude full KJV passages, audio reading, hide/reveal functions, and memorization exercises.\n\nThe audio reading must include Play, Pause, Resume, Stop, Repeat, and speed controls where supported.\n\n12. SIMPLE PROGRESS TRACKING AND PROGRESS BAR\n\nDisplay the current declaration number:\n\nDeclaration 1 of 21\n\nContinue through:\n\nDeclaration 21 of 21\n\nInclude a clearly visible visual progress bar showing the participant’s progress through the 21 declarations.\n\nThe progress bar must:\n\n* Update automatically after each declaration.\n* Display the current percentage or equivalent progress.\n* Include an accessible text label, such as 1 of 21 completed.\n* Be visible and readable on both iPhone and Samsung phones.\n* Use high-contrast colors.\n* Not require horizontal scrolling.\n* Remain synchronized with automatic audio progression.\n* Update correctly when the participant uses Next, Previous, Rewind, Resume, or Repeat.\n* Show completion when all 21 declarations are finished.\n\nAllow users to resume where they stopped when supported.\n\nSave progress locally without requiring registration.\n\nDo not create a complicated dashboard.\n\n13. ORIGINAL PROPHETIC INSTRUCTIONS\n\nPreserve the original instructions concerning the Blood of Jesus, the garden, prayer, and pouring upon the earth.\n\nDisplay them in the original sequence.\n\nUse clear visual labels:\n\nREAD\n\nPRAY\n\nREPEAT AFTER ME\n\nFOLLOW ORIGINAL DIRECTION\n\nGIVE THANKS\n\nDo not invent additional prophetic actions or rituals.\n\nKeep any practical safety information separate from the original text.\n\n14. QUALITY ASSURANCE\n\nBefore deployment, verify:\n\n* All 21 declarations are present.\n* All original instructions are preserved.\n* All three Scriptures are included.\n* The complete original document is accessible.\n* Audio playback works.\n* Pause and Resume work.\n* Rewind and Forward work.\n* Repeat-after-me pauses work.\n* The Beginner voice prompt reads the complete Beginner level.\n* The Intermediate voice prompt reads the complete Intermediate level.\n* The Advanced voice prompt reads the complete Advanced level.\n* Study-level audio controls work on supported iPhone and Samsung phones.\n* Family names save correctly.\n* All quiz questions and answers are accurate.\n* All three Bible study levels work.\n* Scripture memory cards function.\n* The progress bar appears and updates correctly from Declaration 1 of 21 through Declaration 21 of 21.\n* The progress bar remains synchronized with audio playback and manual controls.\n* No horizontal scrolling occurs.\n* The interface is usable on iPhone.\n* The interface is usable on Samsung.\n* Buttons and controls are large enough to tap on both phone types.\n* Text and progress indicators are readable on both phone types.\n* The new project is separate from all existing projects.\n\nClearly report any tests that could not be completed.\n\n15. VERCEL DEPLOYMENT\n\nUse my existing Vercel account.\n\nCreate a new project specifically for this prophetic direction.\n\nDO NOT MODIFY OR REPLACE:\n\nhttps://l137-declare-in-color.vercel.app\n\nDeploy the new application under a separate project.\n\nAfter successful deployment:\n\n1. Confirm the new HTTPS link is publicly accessible.\n2. Confirm the original website remains accessible and unchanged.\n3. Test the new website on iPhone.\n4. Test the new website on Samsung.\n5. Confirm the progress bar works on both phone types.\n6. Confirm the Beginner, Intermediate, and Advanced voice prompts work on both phone types where supported.\n7. Provide the verified HTTPS link.\n8. Provide the project source files for backup.\n9. Provide a short announcement that can be shared on Clubhouse and WhatsApp.\n\nIf direct Vercel deployment is unavailable, provide the complete deployment-ready project and explain the exact steps needed. Do not claim publication has occurred.\n\n16. FINAL INSTRUCTIONS\n\nPRESERVE EVERY ORIGINAL WORD.\n\nNEVER REPLACE AN EXISTING L137 WEBSITE.\n\nCREATE A SEPARATE PROJECT FOR EVERY PROPHETIC DIRECTION.\n\nUSE ONLY VERIFIED BIBLICAL SOURCES AND APPROVED MINISTERS.\n\nMAKE THE MAIN EXPERIENCE ONE-BUTTON SIMPLE.\n\nINCLUDE WORKING AUDIO, THREE STUDY LEVELS, VOICE PROMPTS FOR BEGINNER, INTERMEDIATE, AND ADVANCED LEVELS, FAMILY PERSONALIZATION, SCRIPTURE MEMORY CARDS, QUIZZES, AND A VISIBLE PROGRESS BAR.\n\nOPTIMIZE AND TEST THE APPLICATION FOR BOTH IPHONE AND SAMSUNG PHONES.\n\nCREATE A REAL FUNCTIONING APPLICATION, NOT JUST A MOCKUP.\n\nPROVIDE A VERIFIED PUBLIC HTTPS LINK ONLY AFTER SUCCESSFUL DEPLOYMENT.\n\nNEXT STEP\n\nI will now paste Pastor Kiki Ocansey’s complete original prophetic direction for October 14, 2026.\n\nWait until I finish providing the entire document before building.\n\nDo not reconstruct, omit, or rewrite any of her words.\n\nWhen I write COMPLETE — BUILD AND DEPLOY, proceed with the application using every instruction above.", "direction": "October 14, 2026\n\n🛑*PROPHETIC DIRECTION*\n\n*DEALING WITH THE EVIL HORNS*\n\n*FASTING AND PRAYER* \n\nAll the horns of the wicked also will I cut off; But the horns of the righteous shall be exalted.”\nPsalm 75:10 KJV\n\nBut thou, O LORD, art a shield for me; My glory, and the lifter up of mine head.”\nPsalm 3:3 KJV\n\n“And they overcame him by the blood of the Lamb, and by the word of their testimony; and they loved not their lives unto the death.”\nRevelation 12:11 KJV\n\n\n🖊️Take your Blood of Jesus and go outside to a safe place in the garden.\n\n🖊️Read the scriptures provided above\n\n🖊️Pray the powerful warfare prayers provided below, commanding every evil horn raised against your life, family, destiny, finances, marriage, children, and ministry to be broken in the mighty Name of Jesus.\n\n🖊️When you have finished praying, pour The Blood of Jesus on the ground and thank the Lord for victory, deliverance, restoration, divine protection, and answered prayers in Jesus Name.\n\n*SAY* \n\n📌As I pour the blood of Jesus upon this earth, every evil horn fighting against my life, my destiny, and my progress, be broken and destroyed now in Jesus Name.\n\n📌O earth, earth, earth, hear the Word of the Lord, Every horn of wickedness raised against my rising, my elevation, and my breakthrough, be shattered by the fire of the Holy Ghost.\n\n📌As I pour this blood of Jesus upon the ground, every evil horn that has scattered my blessings, my opportunities, my finances, and my divine helpers, be broken by the power of God in Jesus Name.\n\n📌Every horn of wickedness that has vowed that I will never lift my head, never prosper, never marry, and never fulfil my destiny, Break by fire.\n\n📌As this blood touches the ground, I declare by faith that every horn of oppression fighting against my family, my children, and my household shall be brought down by the power of Jesus Christ.\n\n📌Every ancestral pattern of oppression, failure, rejection, and non-achievement operating against my progress, I renounce your influence! Be destroyed now.\n\n📌O Lord, arise and cut off every horn of the wicked standing against my financial breakthrough, my career advancement, my business, and my divine establishment.\n\n📌As I pour this blood of Jesus upon the earth, every evil horn standing at the gate of my next level, resisting my promotion and advancement, be uprooted by the fire of the Holy Ghost.\n\n📌Every horn of darkness that has kept my head bowed in shame, disgrace, humiliation, and disappointment, hear the Word of the Lord, Be shattered now, My God shall lift my head, in Jesus Name.\n\n📌Every horn of household oppression seeking to scatter my marriage, divide my family, frustrate my children, and destroy my peace, be broken by the mighty hand of God.\n\n📌As I pour this blood upon the ground, every evil horn speaking against my name, my reputation, my opportunities, and my future, be silenced by the authority of Jesus Christ.\n\n📌Every horn of stagnation that has kept me in one position for years, resisting my progress and delaying my expectations, BREAK! BREAK! BREAK NOW \n\n📌O God who sent the four craftsmen to cast down the four horns, arise and send Your divine intervention against every opposition fighting my destiny\n\n📌As I pour this blood of Jesus upon the earth, every horn of affliction, infirmity, sorrow, and oppression rising against my health and peace, be broken Now. Lord, release Your healing and restoration upon my life Now \n\n📌Every evil horn that rises whenever I am about to receive good news, a promotion, a breakthrough, or an answered prayer, lose your power over my life, in Jesus mighty Name.\n\n 📌Every horn of wickedness fighting against my children and the generations coming after me, be broken by the power of the Holy Ghost, My children shall rise, prosper in God's purpose, and fulfil their divine assignments.\n\n📌As I pour this blood of Jesus upon the ground, I declare that every destructive pattern of repeated disappointment, failure, poverty, and rejection in my family shall come to an end, in Jesus Name\n\n📌Every evil horn that has scattered my joy, stolen my peace, weakened my prayer life, and brought discouragement into my heart, be cast down by the fire of the Holy Ghost, in Jesus mighty Name \n\n📌O Lord as you cut off the Horns of the wicked, exalt my Horn,  Lift my head above shame, rejection, delay, stagnation, and every opposition, Let my testimony manifest for Your glory, in Jesus Name\n\n📌AS I POUR THIS BLOOD OF JESUS UPON THE EARTH, I DECLARE BY THE AUTHORITY OF JESUS CHRIST, EVERY EVIL HORN FIGHTING MY LIFE, MY FAMILY, MY CHILDREN, MY MARRIAGE, MY FINANCES, MY MINISTRY, AND MY DESTINY, BE BROKEN NOW.\n\n📌LET MY HORN BE EXALTED ABOVE EVERY OPPOSITION, IN THE MIGHTY NAME OF JESUS CHRIST AMEN 🙏🏽 \n\n📌NOW POUR THE BLOOD OF JESUS ON THE EARTH AND THANK THE LORD.\n\nGOD BLESS YOU AS YOU PRAY IN FAITH! 🙏🏾", "instr": ["🖊️Take your Blood of Jesus and go outside to a safe place in the garden.", "🖊️Read the scriptures provided above", "🖊️Pray the powerful warfare prayers provided below, commanding every evil horn raised against your life, family, destiny, finances, marriage, children, and ministry to be broken in the mighty Name of Jesus.", "🖊️When you have finished praying, pour The Blood of Jesus on the ground and thank the Lord for victory, deliverance, restoration, divine protection, and answered prayers in Jesus Name."], "decl": ["📌As I pour the blood of Jesus upon this earth, every evil horn fighting against my life, my destiny, and my progress, be broken and destroyed now in Jesus Name.", "📌O earth, earth, earth, hear the Word of the Lord, Every horn of wickedness raised against my rising, my elevation, and my breakthrough, be shattered by the fire of the Holy Ghost.", "📌As I pour this blood of Jesus upon the ground, every evil horn that has scattered my blessings, my opportunities, my finances, and my divine helpers, be broken by the power of God in Jesus Name.", "📌Every horn of wickedness that has vowed that I will never lift my head, never prosper, never marry, and never fulfil my destiny, Break by fire.", "📌As this blood touches the ground, I declare by faith that every horn of oppression fighting against my family, my children, and my household shall be brought down by the power of Jesus Christ.", "📌Every ancestral pattern of oppression, failure, rejection, and non-achievement operating against my progress, I renounce your influence! Be destroyed now.", "📌O Lord, arise and cut off every horn of the wicked standing against my financial breakthrough, my career advancement, my business, and my divine establishment.", "📌As I pour this blood of Jesus upon the earth, every evil horn standing at the gate of my next level, resisting my promotion and advancement, be uprooted by the fire of the Holy Ghost.", "📌Every horn of darkness that has kept my head bowed in shame, disgrace, humiliation, and disappointment, hear the Word of the Lord, Be shattered now, My God shall lift my head, in Jesus Name.", "📌Every horn of household oppression seeking to scatter my marriage, divide my family, frustrate my children, and destroy my peace, be broken by the mighty hand of God.", "📌As I pour this blood upon the ground, every evil horn speaking against my name, my reputation, my opportunities, and my future, be silenced by the authority of Jesus Christ.", "📌Every horn of stagnation that has kept me in one position for years, resisting my progress and delaying my expectations, BREAK! BREAK! BREAK NOW", "📌O God who sent the four craftsmen to cast down the four horns, arise and send Your divine intervention against every opposition fighting my destiny", "📌As I pour this blood of Jesus upon the earth, every horn of affliction, infirmity, sorrow, and oppression rising against my health and peace, be broken Now. Lord, release Your healing and restoration upon my life Now", "📌Every evil horn that rises whenever I am about to receive good news, a promotion, a breakthrough, or an answered prayer, lose your power over my life, in Jesus mighty Name.", "📌Every horn of wickedness fighting against my children and the generations coming after me, be broken by the power of the Holy Ghost, My children shall rise, prosper in God's purpose, and fulfil their divine assignments.", "📌As I pour this blood of Jesus upon the ground, I declare that every destructive pattern of repeated disappointment, failure, poverty, and rejection in my family shall come to an end, in Jesus Name", "📌Every evil horn that has scattered my joy, stolen my peace, weakened my prayer life, and brought discouragement into my heart, be cast down by the fire of the Holy Ghost, in Jesus mighty Name", "📌O Lord as you cut off the Horns of the wicked, exalt my Horn,  Lift my head above shame, rejection, delay, stagnation, and every opposition, Let my testimony manifest for Your glory, in Jesus Name", "📌AS I POUR THIS BLOOD OF JESUS UPON THE EARTH, I DECLARE BY THE AUTHORITY OF JESUS CHRIST, EVERY EVIL HORN FIGHTING MY LIFE, MY FAMILY, MY CHILDREN, MY MARRIAGE, MY FINANCES, MY MINISTRY, AND MY DESTINY, BE BROKEN NOW.", "📌LET MY HORN BE EXALTED ABOVE EVERY OPPOSITION, IN THE MIGHTY NAME OF JESUS CHRIST AMEN 🙏🏽"], "closing": "📌NOW POUR THE BLOOD OF JESUS ON THE EARTH AND THANK THE LORD.", "blessing": "GOD BLESS YOU AS YOU PRAY IN FAITH! 🙏🏾", "scr": [{"text": "All the horns of the wicked also will I cut off; But the horns of the righteous shall be exalted.”", "ref": "Psalm 75:10 KJV"}, {"text": "But thou, O LORD, art a shield for me; My glory, and the lifter up of mine head.”", "ref": "Psalm 3:3 KJV"}, {"text": "“And they overcame him by the blood of the Lamb, and by the word of their testimony; and they loved not their lives unto the death.”", "ref": "Revelation 12:11 KJV"}], "header": ["October 14, 2026", "🛑*PROPHETIC DIRECTION*", "*DEALING WITH THE EVIL HORNS*", "*FASTING AND PRAYER*"], "say": "*SAY*", "ministers": "L137 — COMPLETE LIST OF APPROVED MINISTERS THAT I CAN QUOTE\n\n1. INTERNATIONAL DELIVERANCE MINISTERS\n\n1. Derek Prince\n2. Frank Hammond\n3. Ida Mae Hammond\n4. Don Dickerman\n5. John Eckhardt\n6. Francis MacNutt\n\n2. AFRICAN MINISTERS — NIGERIA\n\n7. Dr. Daniel K. Olukoya\n8. Bishop David Oyedepo\n9. Bishop David Abioye\n10. Pastor E. A. Adeboye\n11. Pastor Ayo Oritsejafor\n12. Apostle Joshua Selman\n13. Apostle Michael Orokpo\n14. Pastor Chris Oyakhilome\n15. Dr. Paul Enenche\n16. Bishop Isaac Oyedepo\n17. Dr. Chigbundu Abraham\n\n3. AFRICAN MINISTERS — GHANA\n\n18. Archbishop Nicholas Duncan-Williams\n19. Bishop Charles Agyinasare\n20. Rev. Isaac Owusu Bempah\n21. Pastor Kiki Ocansey\n22. Prophet Prince Amo David\n\n4. OTHER SPIRITUAL WARFARE TEACHERS\n\n23. Cindy Trimm\n24. Jennifer LeClaire\n25. Rebecca Brown\n26. Mary K. Baxter\n\n5. APPROVED BIBLICAL RESEARCH SOURCES\n\nBible Translation\n\n* King James Version (KJV)\n\nBiblical Lexicons and Concordances\n\n* Strong’s Exhaustive Concordance\n* Brown–Driver–Briggs Hebrew Lexicon\n* Thayer’s Greek Lexicon\n\nBible Commentaries\n\n* Matthew Henry’s Commentary\n* John Gill’s Exposition of the Bible\n* The MacArthur Bible Commentary\n* Keil and Delitzsch Biblical Commentary\n* Jamieson–Fausset–Brown Bible Commentary"};
-const $ = s=>document.querySelector(s);
-const esc = t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const store={get(k,d){try{const v=localStorage.getItem('eh14_'+k);return v===null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem('eh14_'+k,JSON.stringify(v))}catch(e){}}};
-function toast(m){const t=$('#toast');t.textContent=m;t.style.display='block';clearTimeout(t._h);t._h=setTimeout(()=>t.style.display='none',2200)}
-// clean text for speech only (display keeps original)
-function speakable(t){return t.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE0F}\u{1F3FB}-\u{1F3FF}]/gu,'').replace(/\*/g,'').replace(/[“”]/g,'').replace(/\s+/g,' ').trim()}
-
-/* ---------- KJV (verified, Bible Gateway KJV) ---------- */
-const KJV={
- 'Zechariah 1:18-21':'18 Then lifted I up mine eyes, and saw, and behold four horns.\n19 And I said unto the angel that talked with me, What be these? And he answered me, These are the horns which have scattered Judah, Israel, and Jerusalem.\n20 And the LORD shewed me four carpenters.\n21 Then said I, What come these to do? And he spake, saying, These are the horns which have scattered Judah, so that no man did lift up his head: but these are come to fray them, to cast out the horns of the Gentiles, which lifted up their horn over the land of Judah to scatter it.',
- 'Zechariah 1:21':'Then said I, What come these to do? And he spake, saying, These are the horns which have scattered Judah, so that no man did lift up his head: but these are come to fray them, to cast out the horns of the Gentiles, which lifted up their horn over the land of Judah to scatter it.',
- 'Psalm 75:10':'All the horns of the wicked also will I cut off; but the horns of the righteous shall be exalted.',
- 'Psalm 3:3':'But thou, O LORD, art a shield for me; my glory, and the lifter up of mine head.',
- 'Revelation 12:11':'And they overcame him by the blood of the Lamb, and by the word of their testimony; and they loved not their lives unto the death.',
- 'Joshua 24:15':'And if it seem evil unto you to serve the LORD, choose you this day whom ye will serve; whether the gods which your fathers served that were on the other side of the flood, or the gods of the Amorites, in whose land ye dwell: but as for me and my house, we will serve the LORD.',
- 'Philippians 4:19':'But my God shall supply all your need according to his riches in glory by Christ Jesus.',
- 'Jeremiah 30:17':'For I will restore health unto thee, and I will heal thee of thy wounds, saith the LORD; because they called thee an Outcast, saying, This is Zion, whom no man seeketh after.',
- '2 Timothy 1:7':'For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind.',
- 'Psalm 118:22':'The stone which the builders refused is become the head stone of the corner.',
- 'James 4:7':'Submit yourselves therefore to God. Resist the devil, and he will flee from you.',
- 'Luke 1:69':'And hath raised up an horn of salvation for us in the house of his servant David;'
-};
-const BG=r=>'https://www.biblegateway.com/passage/?search='+encodeURIComponent(r)+'&version=KJV';
-const scr=(r)=>`<div class="scripture pre">${esc(KJV[r])}<span class="ref">${esc(r)} (KJV) · <a href="${BG(r)}" target="_blank" rel="noopener">open</a></span></div>`;
-
-/* ---------- SPEECH ---------- */
-const S={synth:window.speechSynthesis||null,voice:null,token:0};
-function pickVoice(){if(!S.synth)return;const v=S.synth.getVoices();S.voice=v.find(x=>/en(-|_)(US|GB)/i.test(x.lang)&&/Samantha|Google US|Daniel|Karen|Natural|Enhanced/i.test(x.name))||v.find(x=>/^en/i.test(x.lang))||null}
-if(S.synth){pickVoice();S.synth.onvoiceschanged=pickVoice}
-function say(text,rate,onend){
-  if(!S.synth){$('#pStatus')&&($('#pStatus').textContent='Read-aloud is not available in this browser. Please read along on screen.');onend&&setTimeout(onend,1500);return}
-  const my=++S.token;S.synth.cancel();
-  const parts=speakable(text).match(/[^.!?;:]+[.!?;:]*/g)||[speakable(text)];
-  let i=0;const next=()=>{if(my!==S.token)return;if(i>=parts.length){onend&&onend();return}
-    const u=new SpeechSynthesisUtterance(parts[i++].trim());u.rate=rate||0.9;u.lang='en-US';if(S.voice)u.voice=S.voice;
-    u.onend=()=>next();u.onerror=()=>next();S.synth.speak(u)};
-  setTimeout(next,60);
-}
-function hush(){S.token++;if(S.synth)S.synth.cancel()}
-
-/* ---------- SHARED AUDIO READER (Play/Pause/Resume/Stop/Back/Next/Repeat/Speed) ---------- */
-let activeReader=null;
-function claim(R){if(activeReader&&activeReader!==R)activeReader.pause();activeReader=R;if(typeof P!=='undefined'&&P.playing)pause()}
-function quick(t,cb){claim(null);say(t,0.9,cb)}
-function makeReader(el){
-  const R={chunks:[],i:0,playing:false,started:false,t:null};
-  el.innerHTML=`<div class="rd" style="display:none"><div class="small"><b data-r="lab"></b></div><div class="bar"><i data-r="bar"></i></div>
-   <div class="ctrls"><button data-r="back"><b>⏮</b>Back</button><button data-r="play" class="play"><b>▶</b>Play</button><button data-r="stop"><b>⏹</b>Stop</button><button data-r="next"><b>⏭</b>Next</button></div>
-   <div class="ctrls" style="grid-template-columns:1fr 1fr"><button data-r="rep"><b>🔁</b>Repeat</button><select data-r="spd" aria-label="Reading speed" style="min-height:52px"><option value="0.75">Slow</option><option value="0.9" selected>Normal speed</option><option value="1.05">A little faster</option><option value="1.2">Fast</option></select></div>
-   <div class="small" data-r="now" style="margin-top:6px"></div></div>`;
-  const q=s=>el.querySelector('[data-r="'+s+'"]');
-  function ui(){if(!R.chunks.length)return;el.firstChild.style.display='block';
-    q('lab').textContent='🔊 Part '+(R.i+1)+' of '+R.chunks.length+(R.playing?' · reading':R.started?' · paused':'');
-    q('bar').style.width=((R.i+1)/R.chunks.length*100)+'%';
-    q('play').innerHTML=R.playing?'<b>⏸</b>Pause':'<b>▶</b>'+(R.started?'Resume':'Play');
-    q('now').textContent=R.chunks[R.i].slice(0,140)+(R.chunks[R.i].length>140?'…':'')}
-  function run(){clearTimeout(R.t);ui();say(R.chunks[R.i],+q('spd').value,()=>{if(!R.playing)return;
-    if(R.i<R.chunks.length-1){R.t=setTimeout(()=>{if(R.playing){R.i++;run()}},1100)}else{R.playing=false;R.started=false;ui();q('lab').textContent='✅ Finished. Press Play to hear it again.';R.i=0}})}
-  R.load=c=>{R.halt();R.chunks=c;R.i=0;R.started=false;ui()};
-  R.play=()=>{if(!R.chunks.length)return;claim(R);R.playing=true;R.started=true;run()};
-  R.pause=()=>{if(!R.playing)return;R.playing=false;clearTimeout(R.t);hush();ui()};
-  R.halt=()=>{const was=R.playing;R.playing=false;clearTimeout(R.t);if(was)hush()};
-  R.stop=()=>{R.halt();hush();R.started=false;R.i=0;ui()};
-  q('play').onclick=()=>R.playing?R.pause():R.play();
-  q('stop').onclick=R.stop;
-  q('back').onclick=()=>{R.i=Math.max(0,R.i-1);R.playing?run():ui()};
-  q('next').onclick=()=>{R.i=Math.min(R.chunks.length-1,R.i+1);R.playing?run():ui()};
-  q('rep').onclick=()=>{claim(R);R.playing=true;R.started=true;run()};
-  return R;
-}
-
-/* ---------- GUIDED PRAYER ---------- */
-const Q=[];
-Q.push({step:'STEP 1 — PROPHETIC DIRECTION',cue:'LISTEN',text:O.header.join('\n'),speak:'Dealing with the Evil Horns. Fasting and prayer. Prophetic direction from Pastor Kiki Ocansey, October 14, 2026.'});
-const ICUE=['FOLLOW ORIGINAL DIRECTION','READ','PRAY','FOLLOW ORIGINAL DIRECTION · GIVE THANKS'];
-O.instr.forEach((t,i)=>Q.push({step:'STEP 1 — PROPHETIC DIRECTION',cue:ICUE[i]+' · Instruction '+(i+1)+' of 4',text:t}));
-O.scr.forEach((s,i)=>Q.push({step:'STEP 2 — SCRIPTURE READING',cue:'READ · Scripture '+(i+1)+' of 3',text:s.text,ref:s.ref,speak:s.ref.replace(' KJV','')+'. '+s.text}));
-Q.push({step:'STEP 3 — PRAYER DECLARATIONS',cue:'SAY',text:O.say,speak:'Now we pray the declarations. Say.'});
-O.decl.forEach((t,i)=>Q.push({step:'STEP 3 — PRAYER DECLARATIONS',cue:'REPEAT AFTER ME · Declaration '+(i+1)+' of 21',text:t,decl:true,n:i+1}));
-Q.push({step:'STEP 4 — COMPLETION',cue:'FOLLOW ORIGINAL DIRECTION · GIVE THANKS',text:O.closing});
-Q.push({step:'STEP 4 — COMPLETION',cue:'BLESSING',text:O.blessing,speak:'God bless you as you pray in faith.',last:true});
-
-const P={i:0,playing:false,timer:null,doneCur:false};
-const FIRSTD=Q.findIndex(x=>x.decl);
-function declProgress(){const it=Q[P.i];
-  let done=Q.slice(0,P.i).filter(x=>x.decl).length+((it.decl&&P.doneCur)?1:0);
-  const pct=Math.round(done/21*100);
-  let lab=it.decl?('Declaration '+it.n+' of 21 · '+done+' of 21 completed ('+pct+'%)'):(done===21?'✅ All 21 declarations completed (100%)':'Declarations: '+done+' of 21 completed ('+pct+'%)');
-  $('#dLab').textContent=lab;$('#dBar').style.width=pct+'%';$('#dBarWrap').setAttribute('aria-valuenow',done);$('#dBarWrap').setAttribute('aria-valuetext',done+' of 21 completed')}
-function showItem(){
-  const it=Q[P.i];$('#pStep').textContent=it.step;
-  $('#pCue').innerHTML='<span class="cue">'+esc(it.cue)+'</span>';
-  $('#pText').className='main pre';$('#pText').textContent=it.text;$('#pRef').textContent=it.ref||'';
-  $('#pBar').style.width=((P.i+1)/Q.length*100)+'%';$('#pCount').textContent='Whole prayer: part '+(P.i+1)+' of '+Q.length;
-  declProgress();store.set('pos',P.i);
-}
-function setPlayBtn(){$('#cPlay').innerHTML=P.playing?'<b>⏸</b>Pause':'<b>▶</b>'+(P.started?'Resume':'Play')}
-function runItem(){
-  clearTimeout(P.timer);P.doneCur=false;showItem();const it=Q[P.i];const rate=+$('#oSpeed').value;
-  const after=()=>{if(!P.playing)return;
-    const repeatMode=$('#oMode').value==='repeat'&&it.decl;
-    const go=()=>{if(!P.playing)return;
-      if(it.decl){P.doneCur=true;declProgress()}
-      if(it.last){P.playing=false;setPlayBtn();$('#pStatus').textContent='Prayer complete. Thank the Lord. You can press Home or study more below.';store.set('pos',0);return}
-      if($('#oAuto').value==='1'){P.i++;runItem()}else{P.playing=false;setPlayBtn();$('#pStatus').textContent='Press Next when ready.'}};
-    if(repeatMode){const words=speakable(it.text).split(' ').length;const ms=Math.max(5000,words*520/rate)*(+$('#oPause').value);
-      $('#pStatus').textContent='🗣️ Your turn — say it now…';P.timer=setTimeout(go,ms)}
-    else{P.timer=setTimeout(go,900)}};
-  $('#pStatus').textContent='🔊 Listening…';
-  if(it.decl&&$('#oMode').value==='repeat'){say('Repeat after me.',rate,()=>{if(P.playing)say(it.text,rate,after)})}
-  else say(it.speak||it.text,rate,after);
-}
-function play(){if(activeReader)activeReader.pause();activeReader=null;P.playing=true;P.started=true;setPlayBtn();runItem()}
-function pause(){P.playing=false;clearTimeout(P.timer);hush();setPlayBtn();$('#pStatus').textContent='Paused. Press Resume to continue from this part.'}
-function openPlayer(from){$('#home').style.display='none';$('#player').style.display='block';P.i=from||0;showItem();window.scrollTo(0,0)}
-$('#startBtn').onclick=()=>{openPlayer(0);play()};
-$('#resumeBtn').onclick=()=>{openPlayer(store.get('pos',0));play()};
-if(store.get('pos',0)>0)$('#resumeWrap').style.display='block';
-$('#cPlay').onclick=()=>P.playing?pause():play();
-$('#cStop').onclick=()=>{pause();P.i=0;P.started=false;showItem();setPlayBtn();$('#pStatus').textContent='Stopped. Press Play to start again from the beginning.'};
-$('#cBack').onclick=()=>{P.i=Math.max(0,P.i-1);P.doneCur=false;P.playing?runItem():showItem()};
-$('#cNext').onclick=()=>{P.i=Math.min(Q.length-1,P.i+1);P.doneCur=false;P.playing?runItem():showItem()};
-$('#cRepeat').onclick=()=>{P.playing=true;P.started=true;setPlayBtn();runItem()};
-$('#cHome').onclick=()=>{pause();$('#player').style.display='none';$('#home').style.display='block';if(P.i>0)$('#resumeWrap').style.display='block'};
-['oSpeed','oPause','oMode','oAuto'].forEach(id=>{const el=$('#'+id);el.value=store.get(id,el.value);el.onchange=()=>store.set(id,el.value)});
-
-/* ---------- ORIGINAL ---------- */
-$('#dirText').textContent=O.direction;
-$('#masterText').textContent=O.master;
-$('#minText').textContent=O.ministers;
-$('#readDir').onclick=()=>{const all=[O.header.join('. ')].concat(O.scr.map(s=>s.ref.replace(' KJV','')+'. '+s.text),O.instr,['Say.'],O.decl,[O.closing,O.blessing]).join(' . ');quick(all,()=>toast('Finished'))};
-$('#stopDir').onclick=()=>{claim(null);hush()};
-function copy(t){(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>toast('Copied')).catch(()=>{const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy');toast('Copied')}catch(e){}a.remove()})}
-$('#copyDir').onclick=()=>copy(O.direction);
-
-/* ---------- SEVEN HORNS (participant notes) ---------- */
-const H=[
- {n:'Horn of Delay and Stagnation',notes:'horn of Delay and Stagnation',ref:null,support:['Zechariah 1:21','Psalm 3:3'],d:[12,8],
-  study:'Zechariah 1:21 says the horns scattered Judah “so that no man did lift up his head.” A people who cannot lift their heads are stuck. Psalm 3:3, from today’s direction, answers it: the LORD is “the lifter up of mine head.”',
-  pray:'Lord, You are the lifter up of my head (Psalm 3:3). Where I have been kept in one place, show me the next step and lift me up, in Jesus’ Name. Amen.',
-  q:'Where in my life do I feel kept in one position? What is one faithful step I can take this week?'},
- {n:'Horn of Family Division',notes:'horn of Family Division, bitterness, conflict, inherited evil patterns, broken relationships, Joshua 24:15 pray to destroy family division',ref:'Joshua 24:15',d:[10,5],
-  study:'Joshua called a whole nation to choose, and then spoke for his own home: “as for me and my house, we will serve the LORD.” The answer to a scattered family begins with a household that chooses the LORD together.',
-  pray:'Lord, as for me and my house, we will serve You (Joshua 24:15). Break bitterness and conflict in my family and join us together in You, in Jesus’ Name. Amen.',
-  q:'Is there someone in my family I need to forgive or pray for by name today?'},
- {n:'Horn of Financial Oppression',notes:'Horn of Financial Oppression, debt, financial hardship, exploitation, destruction of resources, Philippians 4:19, pray for provision, discipline, wisdom, opportunities, restoration, pray for debt payment, debt cancellation, deliverance from financial hardship',ref:'Philippians 4:19',d:[7,3],
-  study:'Paul wrote Philippians 4:19 to a church that had given to support his ministry. The promise is that God supplies need “according to his riches in glory by Christ Jesus” — His riches, not our limits.',
-  pray:'My God shall supply all my need according to His riches in glory by Christ Jesus (Philippians 4:19). Lord, give me provision, discipline, wisdom and opportunities, and deliver me from financial hardship, in Jesus’ Name. Amen.',
-  q:'What wise step (budget, plan, honest conversation) can I take alongside my prayer for provision?'},
- {n:'Horn of Affliction and Infirmity',notes:'horn of affliction and infirmity - scripture Jeremiah 30:17 verse that says for i will heal thee',ref:'Jeremiah 30:17',d:[14],
-  study:'In Jeremiah 30 the LORD speaks to a people who had been called “an Outcast… whom no man seeketh after.” His answer is personal: “I will restore health unto thee, and I will heal thee of thy wounds.”',
-  pray:'Lord, You said, “I will restore health unto thee, and I will heal thee of thy wounds” (Jeremiah 30:17). Restore my health and peace, and guide me to the right care, in Jesus’ Name. Amen.',
-  q:'Who can I pray for today who needs healing, and how can I encourage them?'},
- {n:'Horn of Fear and Intimidation',notes:'HORN of fear and intimidation. 2 timothy 1:7 God has not given us a spirit of fear',ref:'2 Timothy 1:7',d:[20],dnote:'None of the 21 declarations names fear directly; Declaration 20 covers every evil horn fighting your life.',
-  study:'Paul wrote to young Timothy while Paul himself was in prison. Fear did not come from God; God gave “power, and of love, and of a sound mind.”',
-  pray:'Father, You have not given me the spirit of fear, but of power, and of love, and of a sound mind (2 Timothy 1:7). I receive calm and courage from You, in Jesus’ Name. Amen.',
-  q:'What fear has been speaking loudest to me? Which part of 2 Timothy 1:7 answers it?'},
- {n:'Horn of Rejection and Discouragement',notes:'horn of rejection and discouragement. Rejected from jobs, marriage, relationships, repeated set backs psalms 118:22 the stone which the builders rejected is a cornerstone',ref:'Psalm 118:22',d:[19,18],
-  study:'Psalm 118:22 speaks of a stone the builders refused that became the head stone of the corner. Jesus applied this verse to Himself (Matthew 21:42). Being refused by people is not the end of God’s plan.',
-  pray:'Lord, the stone which the builders refused is become the head stone of the corner (Psalm 118:22). Lift me above rejection and discouragement and set me in my place in You, in Jesus’ Name. Amen.',
-  q:'Where have I felt refused? How does Psalm 118:22 change how I see it?'},
- {n:'Horns of Spiritual Opposition',notes:'horns of spiritual opposition, temptation, deception, resistant, living faithfully for Christ James 4:7',ref:'James 4:7',d:[13,18],
-  study:'James 4:7 gives two commands in order: first “Submit yourselves therefore to God,” then “Resist the devil.” The promise follows: “he will flee from you.”',
-  pray:'Lord, I submit myself to You. I resist the devil, and he will flee from me (James 4:7). Keep me from temptation and deception and help me live faithfully for Christ, in Jesus’ Name. Amen.',
-  q:'What does submitting to God look like for me today, before I resist the enemy?'}
-];
-$('#notesList').innerHTML='<ol>'+H.map(h=>'<li><b>'+esc(h.n)+'</b> — '+esc(h.notes)+'</li>').join('')+'</ol>';
-
-/* ---------- DEVOTIONALS ---------- */
-let day=store.get('day',0);
-$('#dayTabs').innerHTML=H.map((h,i)=>`<button data-d="${i}">Day ${i+1}</button>`).join('');
-function renderDay(){
-  document.querySelectorAll('#dayTabs button').forEach((b,i)=>b.classList.toggle('on',i===day));
-  const h=H[day];store.set('day',day);
-  const refs=h.ref?[h.ref]:h.support;
-  const done=store.get('done',[]);
-  $('#dayBody').innerHTML=`
-  <div class="card">
-    <div class="small">Day ${day+1} of 7</div><h3>${esc(h.n)}</h3>
-    <span class="tag note">FROM THE TEACHING NOTES</span><p>${esc(h.notes)}</p>
+<!-- PLAYER -->
+<div class="player" id="player" aria-label="Voice player">
+  <div class="p-info">
+    <span class="p-dot" id="pDot"></span>
+    <span class="p-label" id="pLabel" role="status" aria-live="polite">Tap ▶ to listen</span>
+    <span class="p-turn" id="pTurn" hidden></span>
   </div>
-  <div class="card"><span class="tag sup">📖 SCRIPTURE (KJV)</span>${h.ref?'':'<p class="small">No Scripture was written for this horn in the notes. These verses come from today’s direction and Zechariah 1.</p>'}${refs.map(scr).join('')}
-    <button class="btn" id="dSay">🔊 Listen</button></div>
-  <div class="card"><span class="tag orig">🔥 DECLARE IT — FROM PASTOR KIKI'S OCTOBER 14 DIRECTION</span>${h.dnote?'<p class="small">'+esc(h.dnote)+'</p>':''}
-    ${h.d.map(n=>`<div class="decl"><div class="small">Declaration ${n} of 21</div>${esc(O.decl[n-1])}</div>`).join('')}
-    <button class="btn gold" id="dDecl">🗣️ Repeat after me</button></div>
-  <div class="card"><span class="tag sup">💡 UNDERSTAND IT — SUPPLEMENTARY</span><p>${esc(h.study)}</p>
-    <div class="reveal" id="dZ">🔨 How do the craftsmen connect? (tap)<div class="ans">In Zechariah 1:20–21 the LORD showed four carpenters “come to fray them, to cast out the horns.” The teaching notes say: God has prepared the carpenters to cut down the horns. Zechariah names the horns that scattered Judah, Israel and Jerusalem; applying them to “${esc(h.n)}” is the teaching's application, not a label found in the verse itself.</div></div></div>
-  <div class="card"><span class="tag sup">🙏🏽 PRAY IT — SUPPLEMENTARY PRAYER</span><p>${esc(h.pray)}</p><button class="btn" id="dPray">🔊 Pray aloud</button></div>
-  <div class="card"><span class="tag sup">⏸️ PAUSE AND REFLECT</span><p><b>${esc(h.q)}</b></p>
-    <textarea id="dNote" rows="3" placeholder="Write a note (stays on this phone)">${esc(store.get('note'+day,''))}</textarea>
-    <button class="btn gold" id="dDone">${done.includes(day)?'✅ Day completed':'Mark day complete'}</button>
-    <div class="small">${done.length} of 7 days completed</div>
-    <button class="btn ghost" id="dPrev" ${day===0?'disabled':''}>⬅ Previous day</button><button class="btn ghost" id="dNext" ${day===6?'disabled':''}>Next day ➡</button></div>`;
-  $('#dSay').onclick=()=>quick(refs.map(r=>r+'. '+KJV[r]).join(' '));
-  $('#dDecl').onclick=()=>{claim(null);let k=0;const go=()=>{if(k>=h.d.length)return;const t=O.decl[h.d[k++]-1];say('Repeat after me. '+t,0.9,()=>{const tk=S.token;setTimeout(()=>{if(S.token===tk)go()},Math.max(5000,speakable(t).split(' ').length*560))})};go()};
-  $('#dPray').onclick=()=>quick(h.pray);
-  $('#dZ').onclick=e=>e.currentTarget.classList.toggle('open');
-  $('#dNote').oninput=e=>store.set('note'+day,e.target.value);
-  $('#dDone').onclick=()=>{const d=store.get('done',[]);if(!d.includes(day))d.push(day);store.set('done',d);renderDay();toast('Day '+(day+1)+' completed')};
-  $('#dPrev').onclick=()=>{day--;hush();renderDay();scrollTo(0,0)};$('#dNext').onclick=()=>{day++;hush();renderDay();scrollTo(0,0)};
-}
-document.querySelectorAll('#dayTabs button').forEach(b=>b.onclick=()=>{day=+b.dataset.d;hush();renderDay()});
-renderDay();
+  <div class="p-dprog"><span id="pDLab">Declarations: 0 of 21 completed (0%)</span><div class="p-dbar" role="progressbar" aria-valuemin="0" aria-valuemax="21" aria-valuenow="0" id="pDBarW" aria-label="Declarations completed"><i id="pDBar"></i></div></div>
+  <div class="p-ctrls">
+    <button class="pc" id="pPrev" aria-label="Rewind to previous">⏮<small>Back</small></button>
+    <button class="pc pc-main" id="pPlay" aria-label="Play">▶<small>Play</small></button>
+    <button class="pc" id="pReplay" aria-label="Replay this line">↺<small>Replay</small></button>
+    <button class="pc" id="pStop" aria-label="Stop">⏹<small>Stop</small></button>
+    <button class="pc" id="pNext" aria-label="Forward to next">⏭<small>Forward</small></button>
+    <button class="pc" id="pSet" aria-label="Voice settings" aria-expanded="false">⚙<small>Voice</small></button>
+  </div>
+  <div class="p-settings" id="pSettings" hidden>
+    <p class="lbl">How do you want to pray?</p>
+    <div class="seg wrapseg" id="modeSeg">
+      <button data-m="listen">🎧 Listen only</button><button data-m="repeat">🗣️ Repeat after me</button><button data-m="study">📖 Study</button>
+    </div>
+    <p class="lbl">Your-turn time</p>
+    <div class="seg wrapseg" id="turnSeg">
+      <button data-t="auto" aria-pressed="true">Auto</button><button data-t="5">5 s</button><button data-t="10">10 s</button><button data-t="15">15 s</button><button data-t="20">20 s</button><button data-t="30">30 s</button>
+    </div>
+    <p class="lbl">Speed</p>
+    <div class="seg wrapseg" id="rateSeg">
+      <button data-r="0.75">0.75×</button><button data-r="0.9">0.9×</button><button data-r="1" aria-pressed="true">1×</button><button data-r="1.25">1.25×</button><button data-r="1.5">1.5×</button>
+    </div>
+    <p class="lbl">Voice</p>
+    <select id="voiceSel" class="input"></select>
+    <button class="btn btn-sm" id="testVoice">🔈 Test the voice</button>
+    <p class="lock-note">🔒 <b>Screen off:</b> phone browsers stop this reading voice when the screen locks or you switch apps. The app asks the phone to keep the screen on while reading. If your screen still turns off, change Auto-Lock (iPhone) or Screen timeout (Android). See the guide, step 4.</p>
+  </div>
+</div>
 
-/* ---------- STUDY ---------- */
-$('#zechFull').innerHTML=esc(KJV['Zechariah 1:18-21'])+'<span class="ref">Zechariah 1:18–21 (KJV) · <a href="'+BG('Zechariah 1:18-21')+'" target="_blank" rel="noopener">open</a></span>';
-$('#zechFull').classList.add('pre');
-document.querySelector('[data-say="zech"]').onclick=()=>quick('Zechariah chapter 1, verses 18 to 21. '+KJV['Zechariah 1:18-21'].replace(/\d+ /g,''));
-const VQ=[['What did Zechariah see?','“behold four horns.” (v.18)'],['What did the angel say the horns were?','“These are the horns which have scattered Judah, Israel, and Jerusalem.” (v.19)'],['What did the horns do to the people?','They scattered Judah “so that no man did lift up his head.” (v.21)'],['What did the LORD show next?','“And the LORD shewed me four carpenters.” (v.20)'],['What did the carpenters come to do?','“to fray them, to cast out the horns of the Gentiles.” (v.21)']];
-$('#vqs').innerHTML=VQ.map((q,i)=>`<div class="reveal">${i+1}. ${esc(q[0])}<div class="ans">${esc(q[1])}</div></div>`).join('');
-document.querySelectorAll('#vqs .reveal').forEach(r=>r.onclick=()=>r.classList.toggle('open'));
+<nav class="tabs" aria-label="Sections">
+  <button data-go="home" class="tab"><span>🏠</span>Home</button>
+  <button data-go="studio" class="tab"><span>🗣️</span>Declare</button>
+  <button data-go="generator" class="tab"><span>🔁</span>Pray</button>
+  <button data-go="blessings" class="tab"><span>👨‍👩‍👧</span>Family</button>
+  <button data-go="learn" class="tab"><span>📖</span>Learn</button>
+</nav>
 
-const BLB=n=>'https://www.blueletterbible.org/lexicon/'+n.toLowerCase()+'/kjv/wlc/0-1/';
-const W=[['Horn','קֶרֶן qeren (keh\'-ren)','H7161','Strong’s: “a horn (as projecting)… figuratively, power.” Usage includes “of strength (fig).”'],
- ['Carpenters','חָרָשׁ chârâsh (khaw-rawsh\')','H2796','Strong’s: “a fabricator or any material:—artificer, carpenter, craftsman, engraver… smith, worker, workman.” Usage outline includes “skilful to destroy (warriors) (fig.).”'],
- ['Fray','חָרַד chârad (khaw-rad\')','H2729','Strong’s: “to shudder with terror; hence, to fear.” In the Hiphil: “to cause to tremble,” “to drive in terror, rout (an army).”']];
-$('#words').innerHTML='<span class="tag sup">SUPPLEMENTARY — STRONG’S CONCORDANCE</span>'+W.map(w=>`<div class="card"><div class="big"><b>${w[0]}</b> — ${w[1]}</div><div class="small">Strong’s <a href="${BLB(w[2])}" target="_blank" rel="noopener">${w[2]}</a></div><p>${esc(w[3])}</p></div>`).join('')+'<p class="small">So the carpenters are skilled workmen whose job is to make the horns tremble and to cast them down.</p>';
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<div id="resumeBar" class="resume" hidden><span>Paused while you were away.</span><button class="btn btn-sm btn-primary" id="resumeBtn">▶ RESUME</button></div>
 
-const LV={
- b:{t:'Beginner',body:`<p>A <b>horn</b> in the Bible is a picture of <b>power</b>. Animals use horns to push and fight.</p>${scr('Psalm 75:10')}<p>God says He will cut off the power of the wicked, and He will lift up the righteous.</p>${scr('Psalm 3:3')}<p>When the enemy tries to push your head down, the LORD lifts it up.</p>${scr('Revelation 12:11')}<p>We overcome by the blood of the Lamb — Jesus — and by speaking what God has done.</p>`,
-  q:[['What does Psalm 75:10 say God will do to the horns of the wicked?',['Cut them off','Make them bigger','Hide them'],0,'“All the horns of the wicked also will I cut off” (Psalm 75:10).'],
-     ['In Psalm 3:3 the LORD is the lifter up of my…',['Hands','Head','Voice'],1,'“my glory, and the lifter up of mine head” (Psalm 3:3).'],
-     ['Revelation 12:11 — they overcame by the blood of the Lamb and by…',['Their strength','The word of their testimony','Their money'],1,'“by the word of their testimony” (Revelation 12:11).'],
-     ['How many horns did Zechariah see?',['Two','Seven','Four'],2,'“behold four horns” (Zechariah 1:18).'],
-     ['What did the LORD show Zechariah after the horns?',['Four carpenters','Four angels with swords','Four chariots'],0,'“And the LORD shewed me four carpenters” (Zechariah 1:20).']]},
- i:{t:'Intermediate',body:`<p><b>Who is speaking?</b> Zechariah the prophet, describing night visions (Zechariah 1:8). <b>The audience:</b> the people of Judah who had come back from exile in Babylon and were rebuilding Jerusalem and the temple (Zechariah 1:1, 16).</p>${scr('Zechariah 1:21')}<p>The horns are the powers that had scattered God’s people. The carpenters are God’s answer to them. Right before this vision God promised, “I am returned to Jerusalem with mercies: my house shall be built in it” (Zechariah 1:16).</p><p><b>The horn of salvation:</b> the same picture is used for God’s saving power in Christ.</p>${scr('Luke 1:69')}<p><b>Pastor Kiki’s application</b> (from the teaching notes): seven evil horns — delay and stagnation, family division, financial oppression, affliction and infirmity, fear and intimidation, rejection and discouragement, spiritual opposition.</p>`,
-  q:[['In Zechariah 1:19, whom had the horns scattered?',['Egypt and Babylon','Judah, Israel, and Jerusalem','The Philistines'],1,'“These are the horns which have scattered Judah, Israel, and Jerusalem” (Zechariah 1:19).'],
-     ['What happened to the people because of the horns (Zechariah 1:21)?',['No man did lift up his head','They all became rich','They built a tower'],0,'“so that no man did lift up his head” (Zechariah 1:21).'],
-     ['Which Scripture in the direction answers “no man did lift up his head”?',['Revelation 12:11','Psalm 3:3','Psalm 75:10'],1,'Psalm 3:3 — the LORD is “the lifter up of mine head.”'],
-     ['Luke 1:69 says God raised up an horn of…',['Salvation','Judgment','Gold'],0,'“an horn of salvation for us in the house of his servant David” (Luke 1:69).'],
-     ['James 4:7 — what comes first?',['Resist the devil','Submit yourselves to God','Flee'],1,'“Submit yourselves therefore to God. Resist the devil, and he will flee from you.”'],
-     ['In Jeremiah 30:17, what had people called Zion?',['An Outcast','A Queen','A Fortress'],0,'“because they called thee an Outcast” (Jeremiah 30:17).'],
-     ['In the teaching notes, which Scripture goes with the Horn of Fear and Intimidation?',['Psalm 118:22','Philippians 4:19','2 Timothy 1:7'],2,'2 Timothy 1:7 — “God hath not given us the spirit of fear.”']]},
- a:{t:'Advanced',body:`<span class="tag sup">SUPPLEMENTARY — LEXICONS & COMMENTARIES</span><p><b>Hebrew:</b> “horn” is <i>qeren</i> (Strong’s H7161), “figuratively, power.” “Carpenters” is <i>chârâsh</i> (H2796), a craftsman or smith; the usage outline includes “skilful to destroy.” “Fray” is <i>chârad</i> (H2729), in the causative “to cause to tremble… to drive in terror.”</p>
-  <p><b>Matthew Henry:</b> “They are horns, denoting their dignity and dominion—horns exalted, denoting also their strength, and power, and violence.” He adds: “If there be horns (which denote the force and fury of beasts) against the church, there are carpenters (which denote the wisdom and forecast of men) for the church.” (<a href="https://www.biblestudytools.com/commentaries/matthew-henry-complete/zechariah/1.html" target="_blank" rel="noopener">Matthew Henry, Zechariah 1</a>)</p>
-  <p><b>John Gill</b> says the horns “signify kingdoms or kings, and these very powerful and mighty.” (<a href="https://www.biblestudytools.com/commentaries/gills-exposition-of-the-bible/zechariah-1-18.html" target="_blank" rel="noopener">Gill on Zechariah 1:18</a>)</p>
-  <span class="tag sup">DOCUMENTED DELIVERANCE TEACHING — DEREK PRINCE (APPROVED MINISTER)</span>
-  <p>On Revelation 12:11, Derek Prince taught: “We overcome Satan when we testify personally to what the Word of God says the blood of Jesus does for us.” His proclamation continues: “Through the blood of Jesus, I am redeemed out of the hand of the devil.” (<a href="https://www.derekprince.com/cards/c-pc03-100" target="_blank" rel="noopener">Derek Prince Ministries, “By This I Overcome the Devil”</a>; see also the sermon <a href="https://www.derekprince.com/sermons/389" target="_blank" rel="noopener">“Spiritual Weapons – The Blood, the Word, Our Testimony”</a>)</p>
-  <p><b>Original meaning and today’s use:</b> in Zechariah the horns are the nations that scattered Judah. Deliverance ministry applies the same picture to powers that oppose a believer's life today. Both are shown here, but they are not the same thing.</p>`,
-  q:[['The Hebrew word for “horn” in Zechariah 1:18 is…',['qeren (H7161)','shofar','chârâsh'],0,'Strong’s H7161 qeren.'],
-     ['Strong’s gives the figurative meaning of qeren as…',['Wisdom','Power','Time'],1,'“figuratively, power” (Strong’s H7161).'],
-     ['The Hebrew word translated “carpenters” is…',['chârâsh (H2796)','qeren','chârad'],0,'Strong’s H2796 chârâsh — craftsman, smith, workman.'],
-     ['The usage outline for chârâsh includes the figurative sense…',['Skilful to build ships','Skilful to destroy (warriors)','Skilful to sing'],1,'H2796 outline: “skilful to destroy (warriors) (fig.).”'],
-     ['“Fray” (chârad, H2729) in the causative means…',['To cause to tremble, drive in terror','To heal','To count'],0,'H2729 Hiphil: “to cause to tremble… to drive in terror, rout.”'],
-     ['Matthew Henry says horns denote…',['Weakness and fear','Dignity and dominion… strength, and power, and violence','Music and worship'],1,'Matthew Henry on Zechariah 1.'],
-     ['Matthew Henry says the carpenters denote…',['The wisdom and forecast of men','Angels of judgment','Priests'],0,'“carpenters (which denote the wisdom and forecast of men)”.'],
-     ['John Gill says the horns signify…',['Kingdoms or kings','Temptations only','Musical instruments'],0,'Gill: “signify kingdoms or kings, and these very powerful and mighty.”'],
-     ['Derek Prince applied Revelation 12:11 this way: “We overcome Satan when we…”',['fast for forty days','testify personally to what the Word of God says the blood of Jesus does for us','stay silent'],1,'Derek Prince Ministries, “By This I Overcome the Devil.” Revelation 12:11: “And they overcame him by the blood of the Lamb, and by the word of their testimony.”'],
-     ['In Zechariah 1:21, over what did the horns of the Gentiles lift up their horn?',['Egypt','The land of Judah','The sea'],1,'“which lifted up their horn over the land of Judah to scatter it.”']]}
-};
-let lv='b';
-const LR=makeReader($('#lvReader'));
-function levelChunks(k){const d=document.createElement('div');d.innerHTML=LV[k].body;const out=[LV[k].t+' level.'];
-  [...d.children].forEach(c=>{if(c.classList.contains('tag'))return;let t=c.textContent.replace(/\s*·\s*open\s*$/,'').replace(/\(KJV\)/g,'King James Version.').replace(/\(([^)]*Derek Prince[^)]*|Matthew Henry, Zechariah 1|Gill on Zechariah 1:18)\)/g,'');if(t.trim())out.push(t.trim())});
-  out.push('Quiz instructions. There are '+LV[k].q.length+' questions. Read each question, then tap one answer. You will see right away if it is correct, with the Scripture. Press Try again to retake it.');
-  out.push('End of the '+LV[k].t+' level.');return out}
-$('#lvListen').onclick=()=>{LR.load(levelChunks(lv));LR.play()};
-$('#lvAll').onclick=()=>{const all=[];['b','i','a'].forEach((k,j)=>{if(j>0)all.push('Now the '+LV[k].t+' level begins.');all.push(...levelChunks(k))});LR.load(all);LR.play()};
-function renderLevel(){document.querySelectorAll('#lvlTabs button').forEach(b=>b.classList.toggle('on',b.dataset.l===lv));
-  $('#lvListen').textContent='▶ LISTEN — '+LV[lv].t+' level';
-  $('#lvlBody').innerHTML='<div class="card"><h3>'+LV[lv].t+'</h3>'+LV[lv].body+'</div>';startQuiz()}
-const QZ={i:0,score:0};
-function startQuiz(){QZ.i=0;QZ.score=0;showQ()}
-function showQ(){const qs=LV[lv].q;
-  if(QZ.i>=qs.length){const best=store.get('best'+lv,0);if(QZ.score>best)store.set('best'+lv,QZ.score);
-    $('#quiz').innerHTML=`<h3>🏆 ${LV[lv].t} quiz complete</h3><p>You scored <b>${QZ.score} of ${qs.length}</b>.</p><button class="btn gold" id="qRe">Try again</button>`;$('#qRe').onclick=startQuiz;if(store.get('qvoice',false))quick('Quiz complete. You scored '+QZ.score+' out of '+qs.length+'.');return}
-  const q=qs[QZ.i];
-  const qv=store.get('qvoice',false);
-  $('#quiz').innerHTML=`<div class="small">${LV[lv].t} quiz · Question ${QZ.i+1} of ${qs.length} · Score ${QZ.score}</div>
-   <label class="small" style="display:block;margin:6px 0"><input type="checkbox" id="qVoice" ${qv?'checked':''} style="width:22px;height:22px;vertical-align:middle"> Read the quiz aloud</label>
-   <h3>${esc(q[0])}</h3>`+q[1].map((o,k)=>`<button class="qopt" data-k="${k}">${'ABC'[k]}. ${esc(o)}</button>`).join('')+'<button class="btn ghost" id="qSay">🔊 Read question</button><div id="qFb"></div>';
-  const readQ=()=>quick('Question '+(QZ.i+1)+'. '+q[0]+' '+q[1].map((o,k)=>'ABC'[k]+'. '+o+'.').join(' '));
-  $('#qSay').onclick=readQ;$('#qVoice').onchange=e=>{store.set('qvoice',e.target.checked);if(e.target.checked)readQ()};if(qv&&QZ.i>0)readQ();
-  document.querySelectorAll('#quiz .qopt').forEach(b=>b.onclick=()=>{if($('#quiz').dataset.lock==='1')return;$('#quiz').dataset.lock='1';
-    const k=+b.dataset.k;const all=document.querySelectorAll('#quiz .qopt');all[q[2]].classList.add('ok');if(k!==q[2])b.classList.add('no');else QZ.score++;
-    const fb=(k===q[2]?'Correct. ':'Not quite. The answer is: '+q[1][q[2]]+'. ')+q[3];
-    $('#qFb').innerHTML=`<p><b>${k===q[2]?'✅ Correct.':'❌ Not quite. The answer is: '+esc(q[1][q[2]])}</b><br>${esc(q[3])}</p><button class="btn ghost" id="qFbSay">🔊 Read answer</button><button class="btn gold" id="qN">Next question ➡</button>`;
-    $('#qFbSay').onclick=()=>quick(fb);if(store.get('qvoice',false))quick(fb);
-    $('#qN').onclick=()=>{$('#quiz').dataset.lock='0';QZ.i++;showQ()}});
-  $('#quiz').dataset.lock='0';
-}
-document.querySelectorAll('#lvlTabs button').forEach(b=>b.onclick=()=>{lv=b.dataset.l;renderLevel()});
-renderLevel();
+<footer class="foot">
+  <p>Pastor Kiki Ocansey · L137 Deliverance Ministry International</p>
+  <p class="small">"For with God nothing shall be impossible." Luke 1:37 KJV</p>
+</footer>
 
-/* memory cards */
-const MC=['Psalm 75:10','Psalm 3:3','Revelation 12:11','Zechariah 1:18-21','Joshua 24:15','Philippians 4:19','Jeremiah 30:17','2 Timothy 1:7','Psalm 118:22','James 4:7'];
-let mc=0,mcShow=false;
-function renderMC(){$('#mcCount').textContent='Scripture '+(mc+1)+' of '+MC.length;const r=MC[mc];
-  $('#mcFace').innerHTML=mcShow?`<div class="pre" style="text-align:left">${esc(KJV[r])}</div><div style="color:var(--gold);font-weight:800;margin-top:8px">${r.replace('-','–')} KJV</div>`:`<div class="big">${r.replace('-','–')}</div><div class="small" style="color:#cfd8f2">Can you say it? Tap to check.</div>`;$('#mcPractice').innerHTML='';
-  MR.load([r.replace('-',' to ').replace(':',' verse ')+'.'].concat(KJV[r].split('\n').map(v=>v.replace(/^\d+ /,''))))}
-const MR=makeReader($('#mcReader'));
-$('#mcFace').onclick=$('#mcFlip').onclick=()=>{mcShow=!mcShow;renderMC()};
-$('#mcNext').onclick=()=>{mc=(mc+1)%MC.length;mcShow=false;renderMC()};$('#mcPrev').onclick=()=>{mc=(mc-1+MC.length)%MC.length;mcShow=false;renderMC()};
-$('#mcBlank').onclick=()=>{const w=KJV[MC[mc]].replace(/^\d+ /,'').replace(/\n\d+ /g,' ').split(' ');const idx=[];w.forEach((x,i)=>{if(x.replace(/\W/g,'').length>4&&idx.length<3&&i%3===1)idx.push(i)});if(!idx.length)idx.push(w.length-1);
-  const ans=idx.map(i=>w[i].replace(/[^A-Za-z']/g,''));
-  $('#mcPractice').innerHTML='<div class="card"><p>'+w.map((x,i)=>idx.includes(i)?'<b>_____</b>':esc(x)).join(' ')+'</p>'+ans.map((a,j)=>`<input type="text" class="blank" placeholder="Missing word ${j+1}" style="margin:4px 0">`).join('')+'<button class="btn gold" id="mcChk">Check</button><div id="mcRes"></div></div>';
-  $('#mcChk').onclick=()=>{const v=[...document.querySelectorAll('.blank')].map(x=>x.value.trim().toLowerCase());const ok=v.filter((x,j)=>x===ans[j].toLowerCase()).length;$('#mcRes').innerHTML=`<p><b>${ok} of ${ans.length} correct.</b> Answers: ${esc(ans.join(', '))}</p>`}};
-renderMC();
-
-/* family prayers */
-const F=['fMe','fSp','fCh','fPa','fOt'];F.forEach(id=>{$('#'+id).value=store.get(id,'');$('#'+id).oninput=e=>store.set(id,e.target.value)});
-function famPrayer(){const g=id=>$('#'+id).value.trim();const me=g('fMe')||'me';const list=[g('fSp'),g('fCh'),g('fPa'),g('fOt')].filter(Boolean).join(', ');
-  const fam=list?list:'my family';
-  return `Personalized prayer (supplementary — not Pastor Kiki's original declarations)\n\nFather, in the Name of Jesus, I thank You. You said, “All the horns of the wicked also will I cut off; but the horns of the righteous shall be exalted” (Psalm 75:10 KJV).\n\nLord, be a shield for ${me} and for ${fam}. Be our glory, and the lifter up of our heads (Psalm 3:3 KJV).\n\nAs for me and my house, we will serve the LORD (Joshua 24:15 KJV). Let every horn that has scattered ${fam} be cast down, as You sent the carpenters “to fray them, to cast out the horns” (Zechariah 1:21 KJV).\n\nSupply all our need according to Your riches in glory by Christ Jesus (Philippians 4:19 KJV). Restore health unto us and heal us of our wounds (Jeremiah 30:17 KJV). You have not given us the spirit of fear, but of power, and of love, and of a sound mind (2 Timothy 1:7 KJV).\n\nWe overcome by the blood of the Lamb, and by the word of our testimony (Revelation 12:11 KJV). In Jesus' Name. Amen.`}
-$('#fMake').onclick=()=>{const t=famPrayer();store.set('fam',t);$('#fOut').innerHTML='<div class="card pre" id="fTxt"></div><button class="btn" id="fSay">🔊 Listen</button><button class="btn" id="fStop">⏹ Stop</button><button class="btn ghost" id="fCopy">Copy</button><button class="btn ghost" id="fShare">Share</button><div class="small">Saved on this phone.</div>';
-  $('#fTxt').textContent=t;$('#fSay').onclick=()=>quick(t.split('\n').slice(2).join(' '));$('#fStop').onclick=()=>{claim(null);hush()};$('#fCopy').onclick=()=>copy(t);
-  $('#fShare').onclick=()=>{if(navigator.share)navigator.share({title:'My Family Prayer',text:t}).catch(()=>{});else copy(t)}};
-if(store.get('fam',null))$('#fMake').click();
-
-$('#sources').innerHTML=`<p><b>Scripture:</b> King James Version, checked at <a href="https://www.biblegateway.com/versions/King-James-Version-KJV-Bible/" target="_blank" rel="noopener">Bible Gateway (KJV)</a>.</p>
-<p><b>Strong’s Concordance:</b> <a href="${BLB('H7161')}" target="_blank" rel="noopener">H7161 qeren</a>, <a href="${BLB('H2796')}" target="_blank" rel="noopener">H2796 chârâsh</a>, <a href="${BLB('H2729')}" target="_blank" rel="noopener">H2729 chârad</a> (Blue Letter Bible).</p>
-<p><b>Commentaries:</b> <a href="https://www.biblestudytools.com/commentaries/matthew-henry-complete/zechariah/1.html" target="_blank" rel="noopener">Matthew Henry’s Commentary, Zechariah 1</a>; <a href="https://www.biblestudytools.com/commentaries/gills-exposition-of-the-bible/zechariah-1-18.html" target="_blank" rel="noopener">John Gill’s Exposition, Zechariah 1:18</a>.</p>
-<p><b>Approved minister quoted:</b> Derek Prince — <a href="https://www.derekprince.com/cards/c-pc03-100" target="_blank" rel="noopener">“By This I Overcome the Devil” proclamation</a> and <a href="https://www.derekprince.com/sermons/389" target="_blank" rel="noopener">“Spiritual Weapons – The Blood, the Word, Our Testimony”</a> (Derek Prince Ministries).</p>
-<p>Only ministers and sources on the L137 approved list are used (see the Build tab).</p>
-<p><b>Original direction and teaching notes:</b> Pastor Kiki Ocansey, L137 Deliverance Ministry International (Clubhouse, October 2026).</p>
-<p>Prayers, study notes and quizzes marked SUPPLEMENTARY were prepared from these sources. They are not Pastor Kiki's words.</p>`;
-
-/* build checklist */
-const CK=[['One START PRAYING button on the home screen','Yes'],['Pastor Kiki’s full direction, word for word','Yes — Original tab'],['4 original instructions','Yes — '+O.instr.length],['3 KJV Scriptures','Yes — '+O.scr.length],['21 declarations, in order','Yes — '+O.decl.length],['Closing instruction and blessing','Yes'],['“Repeat after me” before each declaration, with pause','Yes'],['Play, Pause/Resume, Stop, Back, Next, Repeat, speed, longer pauses, hands-free','Yes'],['Declaration progress bar (Declaration 1 of 21 … 21 of 21, % completed)','Yes'],['Instruction labels: READ, PRAY, REPEAT AFTER ME, FOLLOW ORIGINAL DIRECTION, GIVE THANKS','Yes'],['UNDERSTANDING THE EVIL HORNS: 3 levels with ▶ LISTEN and PLAY ALL LEVELS','Yes'],['Quizzes 5 / 7 / 10 with feedback, Scripture, score, retry and read-aloud','Yes'],['Scripture memory cards incl. Psalm 75:10, Psalm 3:3, Revelation 12:11, Zechariah 1:18–21','Yes — 10 cards'],['Documented teaching from an approved minister','Yes — Derek Prince'],['My Family Prayers (saved only on the phone)','Yes'],['Progress saved on the phone','Yes'],['Navy, royal blue, gold and white; day/night; bigger text','Yes'],['Full Clubhouse sermon transcript','Waiting for an approved clean copy'],['Tested on a real iPhone and Samsung phone','Not yet — needs a check on real phones'],['Read-aloud when the screen is locked','Not supported by most phone browsers']];
-$('#checklist').innerHTML='<table>'+CK.map(c=>`<tr><td>${esc(c[0])}</td><td><b>${esc(c[1])}</b></td></tr>`).join('')+'</table>';
-$('#liveUrl').innerHTML='<a href="'+location.origin+'">'+esc(location.host||'this page')+'</a>';
-
-/* nav, mode, font, share */
-function go(v){hush();if(P.playing)pause();document.querySelectorAll('section.view').forEach(s=>s.classList.toggle('on',s.id==='v-'+v));document.querySelectorAll('#nav button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));scrollTo(0,0);store.set('tab',v)}
-document.querySelectorAll('#nav button').forEach(b=>b.onclick=()=>go(b.dataset.v));
-function setMode(n){document.body.classList.toggle('night',n);$('#mode').textContent=n?'☀️':'🌙';$('#mode').setAttribute('aria-label',n?'Switch to day mode':'Switch to night mode');store.set('night',n)}
-setMode(store.get('night',false));$('#mode').onclick=()=>setMode(!document.body.classList.contains('night'));
-let fs=store.get('fs',19);const setFs=()=>{document.documentElement.style.setProperty('--fs',fs+'px');store.set('fs',fs)};setFs();
-$('#fsUp').onclick=()=>{fs=Math.min(28,fs+2);setFs()};$('#fsDown').onclick=()=>{fs=Math.max(15,fs-2);setFs()};
-$('#share').onclick=()=>{const d={title:'Dealing with the Evil Horns — L137',text:'Pastor Kiki Ocansey · October 14, 2026 · Press START PRAYING',url:location.href.split('#')[0]};if(navigator.share)navigator.share(d).catch(()=>{});else copy(d.url)};
-</script>
+<script src="data.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
