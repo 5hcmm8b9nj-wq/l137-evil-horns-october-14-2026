@@ -346,3 +346,5 @@ details.why.supp{padding:4px 14px}
 
 .cov-cap{margin-top:8px;font-size:.8em;line-height:1.45}
 .cov-cap p{font-size:1em}
+
+.cover img{aspect-ratio:auto!important;height:auto!important;object-fit:contain!important;width:100%}
