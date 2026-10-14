@@ -343,3 +343,6 @@ details.why.supp{padding:4px 14px}
 .home-scrip{margin:10px 0 14px}
 .say-hd{font-weight:800;letter-spacing:.08em;color:var(--gold-text);margin:14px 0 4px}
 .qsay{margin-top:6px}
+
+.cov-cap{margin-top:8px;font-size:.8em;line-height:1.45}
+.cov-cap p{font-size:1em}
